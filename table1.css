@@ -11,6 +11,17 @@ h2{
     color: rgba(0, 0, 0, 0.864);
     font-weight: 500;
 }
+#student-details{
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    margin-left: 15px;
+    margin-right:15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
 #title{
     font-weight: 600;
     color: white;
