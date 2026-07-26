@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D</title>
+    <title>Revision</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .para {
+            width: 50%;
+        }
+
+        img {
+            width: 20%;
+        }
+
+        .font {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+
+        table {
+            width: 95%;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        tr,
+        td {
+            border: 2px solid black;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <h1>This a heading tag</h1>
+    <div class="container">
+        <p class="para font">This is a paragraph tag. It contains information about Rahul. Rahul is a boy. He studies in
+            Class 1. He is good in studies and is also good in games. He is a very active student. His favourite subject
+            is History. He feels inspired by his freedom fighters.</p>
+        <img src="./Rahul.png" alt="Boy"><br><br>
+
+    </div>
+    <a href="https://google.com" target="_blank" class="font">Click Here to open Google!</a>
+    <br><br>
+    <div class="container">
+        <div class="child">
+            <strong class="font">Grocery List:</strong>
+            <ul class="font">
+                <li>Egg</li>
+                <li>Milk</li>
+                <li>Dates</li>
+            </ul>
+        </div>
+        <div class="child">
+            <strong class="font">Morning Routine:</strong>
+            <ol class="font">
+                <li>Wake up at 6 AM.</li>
+                <li>Brush your teeth.</li>
+                <li>Go to bath and get in college uniform.</li>
+                <li>Have breakfast</li>
+                <li>Go to College.</li>
+            </ol>
+        </div>
+    </div>
+
+    <table class="font">
+        <tbody>
+            <tr>
+                <th>Student Name</th>
+                <th>:</th>
+                <td>Rahul Sharma</td>
+                <th>School Name</th>
+                <th>:</th>
+                <td>Green Valley School</td>
+            </tr>
+            <tr>
+                <th>Roll Number</th>
+                <th>:</th>
+                <td>10123</td>
+                <th>Academic Year</th>
+                <th>:</th>
+                <td>2023-24</td>
+            </tr>
+            <tr>
+                <th>Class</th>
+                <th>:</th>
+                <td>12th</td>
+                <th>Exam Type</th>
+                <th>:</th>
+                <td>Annual Examination</td>
+            </tr>
+            <tr>
+                <th>Section</th>
+                <th>:</th>
+                <td>A</td>
+                <th>Date</th>
+                <th>:</th>
+                <td>20 May 2024</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
+
 </html>
