@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+header{
+    padding: 20px 50px 55px;
+    background: linear-gradient(-230deg,#0000ff, #0000ff, #00ff00);
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    font-weight: bolder;
+}
+.hero-section{
+    width: 40%;
+}
+.hero img{
+    padding-top: 50px;
+    height: 250px;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.navlinks{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+   color: #00ff00; 
+}
+li{
+    list-style: none;
+}
+li a{
+    color: white;
+    text-decoration: none;
+}
+.white {
+    color: white;
+}
+.download{
+    background-color: rgba(5, 185, 5, 0.801);
+    border-radius: 25px;
+    border: 0px;
+    outline: 0px;
+    padding: 10px 25px;
+}
+.start{
+    margin-top: 25px;
+    background: none;
+    border: 0.5px solid white;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 550;
+}
+.trust{
+    padding: 35px;
+    gap: 40px;
+    background-color: #e6e6e6;
+}
+.img-list{
+    display: flex;
+    gap: 50px;
+}
+.img-list img{
+    height: 50px;
+}
+.title{
+    font-family: "Google Sans", sans-serif;
+    color: rgb(169, 168, 168);
+    font-size: 20px;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+.main-content{
+    padding: 35px;
+    gap: 40px;
+}
+.contentlist{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content{
+    width: 30%;
+}
+a{
+    text-decoration: none;
+    padding:10px;
+}
+strong{
+    padding: 10px;
+}
+.pricing{
+    padding: 45px;
+    background-color: darkblue;
+    gap:45px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 48px;
+}
+.pricing-list{
+    display: flex;
+    gap: 35px;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+}
+.dollar{
+    font-size: 45px;
+    font-weight: 700;
+}
+.price{
+    background-color: white;
+    width: 35%;
+    font-size: 20px;
+    padding: 20px;
+}
+.contact{
+    background-color: #000000;
+    color: #ffffff;
+    padding:10px 25px;
+    border: 0px;
+    outline: 0px;
+}
+.team{
+    padding: 45px;
+    gap: 45px;
+    background-color: #e6e6e6;
+}
+.members{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.members img{
+    border-radius: 5px;
+}
+.info{
+    gap: 5px;
+}
+.name{
+    color: rgb(103, 51, 201);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.specs{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(169, 168, 168);
+}
+.openSource{
+    padding: 45px 45px 85px;
+    gap: 25px;
+}
+.github{
+    border: 2px solid rgb(169, 168, 168);;
+    background-color: white;
+    color: black;
+    outline: 0px;
+    padding: 10px 35px;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: darkblue;
+    color: #898686;
+}
+.details{
+    padding:45px 35px 60px;
+    height: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.taghead{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 10px;
+}
