@@ -232,7 +232,7 @@ main .filter .buttons button{
     border-radius: 12px;
 }
 main .program{
-    padding: 1vh 5vw 8vh 7vw;
+    padding: 1vh 5vw 20vh 7vw;
 }
 main .program .row{
     display: flex;
@@ -277,6 +277,10 @@ main .program .row .child .desc button{
 }
 main .program .row .child .desc h3{
     font-weight: 900;
+}
+.bottom{
+    border-bottom: 1px solid rgb(214, 212, 212);
+    padding-bottom: 3vh;
 }
 .active{
     color: #8206ef ;
