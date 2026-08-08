@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+}
+.pliant{
+    font-family: "Pliant", sans-serif;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.lato{
+    font-family: "Lato", sans-serif;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.border{
+    border:0;
+    outline:0;
+}
+.purple{
+    color: #540599;
+}
+.grey{
+    color: grey;
+}
+nav{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 5vw 1vh 5vh; 
+    font-size: 2vh;
+    border-bottom: 2px solid whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+    box-sizing: border-box; 
+}
+.nav-links{
+    display: flex;
+}
+.logo-CSS{
+    display: flex;
+    gap: 0.8vw;
+}
+.logo-CSS h3{
+    font-size: 25px;
+    color: rgb(64, 64, 221);
+}
+.logo-CSS img{
+    height: 4vh;
+}
+.links{
+    display: flex;
+    list-style: none;
+    gap: 2vw;
+    padding-top: 0.4vh;
+}
+.links li a{
+    text-decoration: none;
+    color: #000000;
+    word-spacing: 0.3vw;
+}
+.dashboard{
+    display: flex;
+    gap:0.8vw;
+}
+.path{
+    font-size: 1.5vh;
+    padding-bottom: 1vh;
+    color: grey;
+}
+.dashboard img{
+    height: 4.5vh;
+    border-radius: 8px;
+}
+main .hero-section{
+    padding: 15vh 5vw 2vh 7vw;
+}
+main .hero-section .admission{
+    display: flex;
+    gap: 0.5vw;
+    border-radius: 12px;
+    outline: 0;
+    width: 11vw;
+    padding: 1vh 1vw 1vh 1vw;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1px solid #8206ef ;
+    background-color: whitesmoke;
+    color: #8206ef;
+}
+main .hero-section button svg{
+    width: 1vw;
+    color: #401668;
+}
+.hero-section h1{
+    font-size: 2.6rem;
+    font-weight: 900;
+    line-height: 7.5vh;
+}
+.hero-section p{
+    font-weight: 600;
+}
+.hero-section .row{
+    display: flex;
+    justify-content: space-between;
+}
+.hero-section .row .child{
+    display: flex;
+    gap: 1vw;
+    width: 41vw;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
+    background-color: whitesmoke;
+    padding: 1.8vh 1vw;
+}
+.hero-section .row .child .star{
+    width: 2vw;
+    background-color: #dadadb;;
+    border-radius: 8px;
+    padding: 0.5vw;
+    color:#8206ef;
+}
+.hero-section .row .child .calendar{
+    width: 2vw;
+    background-color: rgba(175, 251, 175, 0.5);;
+    border-radius: 8px;
+    padding: 0.5vw;
+    color:green;
+}
+.hero-section .row .child .content{
+    gap: 0.5vh;
+}
+.hero-section .row .child .content h4{
+    font-weight: 900;
+}
+.hero-section .row .child .content p{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+.demo{
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
+    background-color: rgba(252, 182, 252, 0.381);
+    padding: 2.5vh 1.8vw;
+    gap: 1.5vh;
+}
+.demo .content{
+    display: flex;
+    gap: 0.5vw;
+}
+.demo .content svg{
+    width: 1.8vw;
+    color: #8206ef;
+}
+.demo p{
+    font-size: 0.9rem;
+}
+.demo button{
+    background-color: #25d366;
+    display: flex;
+    gap: 1vw;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 1rem;
+    outline: 0;
+    width: 15vw;
+    padding: 1vh 1vw 1vh 1vw;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.demo button svg{
+    width: 2.8vw;
+    color: #ffffff;
+}
+.search{
+    padding: 2.5vh 1.8vw;
+    width: 84vw;
+    display: flex;
+    gap: 1vw;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
+    background-color: whitesmoke;
+}
+.search svg{
+    width: 1.4vw;
+    color: grey;
+}
+.search input{
+    border: 0px;
+    width: 60vw;
+    font-weight: 800;
+    font-size: 0.9rem;
+    background-color: whitesmoke;
+}
