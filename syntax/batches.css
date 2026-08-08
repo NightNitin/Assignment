@@ -261,6 +261,7 @@ main .program .row .child .desc .flex-child .cols{
 }
 main .program .row .child .desc .flex-child .cols p,pre{
     font-size: 0.8rem;
+    font-weight: 600;
 }
 main .program .row .child .desc .flex-child .cols .soln{
     font-weight: 800;
@@ -277,6 +278,20 @@ main .program .row .child .desc button{
 .active{
     color: #8206ef ;
     background-color: #cf97ff;
+}
+.timetaken{
+    font-size: 0.8rem;
+}
+.buttonGame{
+    gap: 1vh;
+}
+main .program .row .child .desc .flex-child .buttonGame .size{
+    padding: 1.5vh 3vw;
+    font-size: 0.75rem;
+}
+.greenry{
+    background-color: rgba(175, 251, 175, 0.5);;
+    color:green;
 }
 
 footer{
