@@ -85,7 +85,7 @@ nav{
 main .hero-section{
     padding: 15vh 5vw 8vh 7vw;
 }
-main .hero-section button{
+main .hero-section .admission{
     display: flex;
     gap: 0.5vw;
     border-radius: 12px;
@@ -99,6 +99,7 @@ main .hero-section button{
 }
 main .hero-section button svg{
     width: 1vw;
+    color: #401668;
 }
 .hero-section h1{
     font-size: 2.6rem;
@@ -145,9 +146,88 @@ main .hero-section button svg{
     font-size: 0.8rem;
     text-transform: uppercase;
 }
+.demo{
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
+    background-color: rgba(252, 182, 252, 0.381);
+    padding: 2.5vh 1.8vw;
+    gap: 1.5vh;
+}
 .demo .content{
     display: flex;
+    gap: 0.5vw;
 }
 .demo .content svg{
-    width: 2vw;
+    width: 1.8vw;
+    color: #8206ef;
+}
+.demo p{
+    font-size: 0.9rem;
+}
+.demo button{
+    background-color: #25d366;
+    display: flex;
+    gap: 1vw;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 1rem;
+    outline: 0;
+    width: 15vw;
+    padding: 1vh 1vw 1vh 1vw;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.demo button svg{
+    width: 2.8vw;
+    color: #ffffff;
+}
+.cohorts .parent{
+    display: flex;
+    gap: 2vw;
+    width: 25vw;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
+    background-color: whitesmoke;
+    padding: 1.8vh 1vw 1.8vh 0.5vw;
+}
+.cohorts .parent .child{
+    padding: 1.5vh 1vw;
+    border-radius: 12px;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+.cohorts .parent .whiteB{
+    background-color: #ffffff;
+}
+.filter .domain{
+    display: flex;
+    gap: 0.5vw;
+}
+.filter .domain svg{
+    width: 1.5vw;
+}
+.filter .domain p{
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+main .filter .buttons{
+    display: flex;
+    gap: 0.5vw;
+}
+main .filter .buttons button{
+    padding: 1vh 1vw;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 0.75rem;
+}
+.blue{
+    background-color: #540599;
+    color: white;
+}
+.backgrey{
+    color: black;
+    background-color: whitesmoke;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 12px;
 }
