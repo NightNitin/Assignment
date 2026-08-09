@@ -82,6 +82,9 @@ nav{
     height: 4.5vh;
     border-radius: 8px;
 }
+nav a{
+    text-decoration: none;
+}
 main .hero-section{
     padding: 15vh 5vw 2vh 7vw;
 }

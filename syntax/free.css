@@ -2,6 +2,9 @@
 *{
     margin: 0;
 }
+nav a{
+    text-decoration: none;
+}
 .pliant{
     font-family: "Pliant", sans-serif;
 }

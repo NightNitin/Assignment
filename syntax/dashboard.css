@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+}
+.pliant{
+    font-family: "Pliant", sans-serif;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.lato{
+    font-family: "Lato", sans-serif;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+nav{
+    display: flex;
+    width: 100vw;
+    height: 4vh;
+    position: fixed;
+}
+nav img{
+    height: 9.5vh;
+    width: 20vw;
+}
+nav .dashboard{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 4vh;
+    padding: 4vh 3vw;
+    background-color: rgba(245, 245, 245, 0.705);
+    outline: 0;
+    border-left: 0.8px solid rgb(195, 193, 193);
+    border-bottom: 0.8px solid rgb(195, 193, 193);
+    box-shadow: 0px 0px 0.8px 0.8px solid rgb(195, 193, 193);
+}
+nav .dashboard .icons{
+    display: flex;
+    gap: 1.2vw;
+}
+nav .dashboard p{
+    font-weight: 600;
+}
+nav .dashboard .icons .diamond{
+    display: flex;
+    gap: 0.3vw;
+    background-color: rgba(194, 234, 247, 0.66);
+    border: 0.5px solid lightblue;
+    border-radius: 18px;
+    padding: 0.4vh 0.8vw;
+}
+.blue{
+    color: blue;
+}
+.bell{
+    padding-top: 0.4vh;
+}
+.grey{
+    color: grey;
+}
+nav .dashboard .icons svg{
+    width: 2vw;
+    height: 3vh;
+}
+nav .dashboard .icons .dashicons {
+    display: flex;
+    gap: 0.8vw;
+}
+nav .dashboard .icons .dashicons img{
+    height: 4.5vh;
+    width: 2.2vw;
+    border-radius: 50%;
+}
+nav .dashboard .icons .dashicons p{
+    padding-top: 0.4vh;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+main{
+    
+}

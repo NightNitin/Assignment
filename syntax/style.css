@@ -19,6 +19,9 @@
     flex-direction: column;
     gap: 3vh;
 }
+nav a{
+    text-decoration: none;
+}
 nav{
     height: auto;
     display: flex;
