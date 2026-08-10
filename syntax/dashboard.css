@@ -22,7 +22,7 @@
 nav{
     display: flex;
     width: 100vw;
-    height: 4vh;
+    height: 20%;
     position: fixed;
 }
 nav img{
@@ -36,6 +36,7 @@ nav .dashboard{
     height: 4vh;
     padding: 4vh 3vw;
     background-color: rgba(245, 245, 245, 0.705);
+    /* background-color: white; */
     outline: 0;
     border-left: 0.8px solid rgb(195, 193, 193);
     border-bottom: 0.8px solid rgb(195, 193, 193);
@@ -85,16 +86,20 @@ nav .dashboard .icons .dashicons p{
 }
 main{
     width: 100%;
+    display: flex;
 }
 main .sidebar{
     width: 20%;
-    height: auto;
+    height: 100vh;
     gap: 0.8vh;
     padding: 15vh 0vw 0vh 0vw;
     overflow-y: scroll;
 }
 main .hero-section{
     width: 80%;
+    height: 100vh;
+    padding: 5vh 0vw 0vh 0vw;
+    overflow-y: scroll;
 }
 main .sidebar .dashim{
     display: flex;
@@ -155,6 +160,93 @@ main .sidebar .overview .portal{
 main .sidebar .overview .signout,.sign{
     color: red;
 }
-main .hero-section .heading{
-    padding: 1vh 20vw;
+main .hero-section .hero{
+    display: flex;
+    padding: 15vh 3vw 0vh 3vw;
+    gap: 0.5vh;
+    justify-content: space-between;
+}
+main .hero-section .row{
+    display: flex;
+    gap: 1vw;
+    padding: 1vh 1vw 1vh 2vw;
+}
+main .hero-section .row .child{
+    display:flex;
+    width: 10vw;
+    border-radius: 12px;
+    border: 1px solid rgb(214, 212, 212);
+    padding: 6vh 1vw;
+    height: 7vh;
+    justify-content: space-between;
+}
+main .hero-section .row .child svg{
+    width: 2vw;
+    height: 5vh;
+}
+main .hero-section .row .child .cols{
+    gap: 0.8vh;
+}
+main .hero-section .row .child .video{
+    color: darkgreen;
+    background-color: greenyellow;
+    border-radius: 50%;
+    padding: 0.5vh 0.5vw;
+}
+main .hero-section .row .child .book{
+    color: blue;
+    background-color: lightblue;
+    border-radius: 50%;
+    padding: 0.5vh 0.5vw;
+}
+main .hero-section .row .child .gem{
+    color: orange;
+    background-color: rgb(232, 231, 231);
+    border-radius: 50%;
+    padding: 0.5vh 0.5vw;
+}
+main .hero-section .row .child .academic{
+    background-color: rgb(232, 231, 231);
+    border-radius: 50%;
+    padding: 0.5vh 0.5vw;
+}
+main .hero-section .row .child .cols h4{
+    font-size: 1.2rem;
+}
+main .hero-section .container{
+    display: flex;
+}
+main .hero-section .container .bar .child{
+    display: flex;
+    gap: 0.7vw;
+    border: 1px solid rgb(188, 186, 186);
+    border-radius: 12px;
+    padding: 1.5vh 0.6vw ;
+}
+main .hero-section .container .bar .child .cols{
+    gap: 0.8vh
+}
+main .hero-section .container .bar .child .cols h5{
+    color: #540599;
+    font-size: 0.8rem;
+}
+main .hero-section .container .bar .child .cols p{
+    font-weight: 750;
+    font-size: 0.88rem;
+}
+main .hero-section .container .bar .child img{
+    height: 11vh;
+    border-radius: 12px;
+}
+main .hero-section .container .bar .content{
+    display: flex;
+    gap: 3.5vw;
+}
+main .hero-section .container .bar .content .skills{
+    font-weight: 600;
+}
+main .hero-section .container .bar .content .library{
+    color: #540599;
+    font-weight: 600;
+    font-size: 0.85rem;
 }
