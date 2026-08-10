@@ -84,5 +84,77 @@ nav .dashboard .icons .dashicons p{
     font-weight: 600;
 }
 main{
-    
+    width: 100%;
+}
+main .sidebar{
+    width: 20%;
+    height: auto;
+    gap: 0.8vh;
+    padding: 15vh 0vw 0vh 0vw;
+    overflow-y: scroll;
+}
+main .hero-section{
+    width: 80%;
+}
+main .sidebar .dashim{
+    display: flex;
+    gap: 0.8vw;
+    padding: 2vh 0vw 2vh 3vw;
+    background-color: whitesmoke;
+}
+main .sidebar .dashim .text-content p{
+    font-weight: 600;
+}
+main .sidebar .dashim .text-content .account{
+    font-size: 0.8rem;
+}
+main .sidebar .dashim img{
+    width: 2.5vw;
+    border-radius: 12px;
+}
+main .sidebar .overview{
+    padding: 2vh 0vw 2vh 3vw;
+    gap: 0.95vh;
+}
+main .sidebar .overview .tag{
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+main .sidebar .overview button{
+    display: flex;
+    gap: 1vw;
+    border: 0;
+    outline: 0;
+    width: 15vw;
+    padding: 1vh 0.8vw;
+}
+main .sidebar .overview .dashboard{
+    background-color: #540599;
+    color: white;
+    border-radius: 12px;
+}
+main .sidebar .overview button svg{
+    width: 1.5vw;
+}
+main .sidebar .overview .backgrey{
+    background-color: #ffffff;
+}
+main .sidebar .overview button p{
+    padding-top: 0.5vh;
+    font-size: 0.9rem;
+}
+main .sidebar .overview .profile{
+    padding-bottom: 4vh;
+}
+main .sidebar .overview .portal{
+    border-top: 1px solid rgb(214, 212, 212);
+    padding-top: 5vh;
+}
+main .sidebar .overview .signout,.sign{
+    color: red;
+}
+main .hero-section .heading{
+    padding: 1vh 20vw;
 }
