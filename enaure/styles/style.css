@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+}
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
+.sansflex{
+    font-family: "Google Sans Flex", sans-serif;
+}
+.uphead {
+  background-color: rgb(3, 87, 3);
+  width: auto;
+  padding: 1.2vh 8vw;
+}
+.uphead .parent {
+  display: flex;
+  gap: 1vw;
+  border-radius: 18px;
+  border: 0;
+  outline: 0;
+  padding: 0.4vh 0.3vw;
+  background: rgba(231, 231, 231, 0.25);
+  backdrop-filter: blur(15px);
+  width: 17vw;
+}
+.uphead .parent .jewelery {
+  display: flex;
+  gap: 0.5vw;
+  border-radius: 18px;
+  padding: 0.4vh 0.8vw;
+  border: 0;
+  outline: 0;
+  color: rgb(3, 87, 3);
+}
+.uphead .parent .jewelery svg {
+  height: 3vh;
+}
+.uphead .parent .jewelery p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-top: 0.4vh;
+}
+.uphead .parent .antique {
+  display: flex;
+  gap: 0.5vw;
+  border: 0;
+  outline: 0;
+  border-radius: 18px;
+  padding: 0.4vh 0.8vw;
+  background: rgba(255, 255, 255, 0);
+  color: #ffffff;
+}
+.uphead .parent .antique svg{
+    height: 2.5vh;
+}
+.uphead .parent .antique p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-top: 0.4vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6vh 8vw;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,0.95);
+  /* background-color: blanchedalmond; */
+}
+nav .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.4vw;
+  padding: 1vh 2vw 0vh 0vw;
+  color: darkgreen;
+}
+nav img {
+  height: 5.1vh;
+}
+nav .icons svg {
+  height: 3.2vh;
+}
+nav .icons button {
+  display: flex;
+  gap: 0.5vw;
+  border-radius: 22px;
+  border: 0;
+  outline: 0;
+  padding: 1vh 1vw;
+  background-color: rgba(192, 255, 192, 0.415);
+  color: darkgreen;
+}
+nav .icons button p {
+  padding-top: 0.5vh;
+  font-weight: 600;
+}
+.welcome{
+    background-color: rgb(3, 87, 3);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0.5vh ;
+    gap:0.5vw;
+}
+.welcome svg{
+    width: 1.5vw;
+}
+.welcome p{
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    letter-spacing: 0.1vw;
+    font-size: 0.8rem;
+}
+.welcome p span{
+    color: rgb(136, 217, 15);
+}
+.hero-section img{
+    width: 100%;
+}
+.products{
+    display: flex;
+    padding: 2.5vh 32vh;
+    justify-content: space-between;
+}
+.products .prod{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5vh;
+    align-items: center;
+}
+.products .prod img{
+    height: 18vh;
+}
+.products .prod p{
+    font-weight: 500;
+}
