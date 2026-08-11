@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   margin: 0;
 }
@@ -7,6 +7,23 @@
 }
 .sansflex{
     font-family: "Google Sans Flex", sans-serif;
+}
+.royale{
+    font-family: "Playfair Display", serif;
+}
+.yellow{
+    color: rgb(251, 201, 3);
+}
+.grey{
+    color: grey;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1vh;
 }
 .uphead {
   background-color: rgb(3, 87, 3);
@@ -31,6 +48,7 @@
   padding: 0.4vh 0.8vw;
   border: 0;
   outline: 0;
+  background-color: white;
   color: rgb(3, 87, 3);
 }
 .uphead .parent .jewelery svg {
@@ -95,6 +113,9 @@ nav .icons button p {
   padding-top: 0.5vh;
   font-weight: 600;
 }
+main{
+    background-color: whitesmoke;
+}
 .welcome{
     background-color: rgb(3, 87, 3);
     display: flex;
@@ -133,7 +154,150 @@ nav .icons button p {
 }
 .products .prod img{
     height: 18vh;
+    border-radius: 12px;
 }
 .products .prod p{
     font-weight: 500;
+}
+.festive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.21vw;
+    padding: 10vh 0vw 5vh 0vw;
+    gap: 1.34vh;
+}
+.festive h5{
+    color: rgb(13, 128, 13);
+    font-weight: 800;
+}
+.festive h2{
+    font-size: 1.88rem;
+    font-weight: 700;
+}
+.barsizes{
+    display: flex;
+    gap: 0.5vw;
+}
+.bar{
+    background-color: rgb(13, 128, 13);
+    height: 0.5vh;
+    width: 6vw;
+    border-radius: 18px;
+}
+.circle{
+    background-color: rgb(13, 128, 13);
+    height: 0.8vh;
+    width: 0.8vh;
+    border-radius: 50%;   
+}
+.piece{
+    display: flex;
+    padding: 1vh 10vw;
+    height: 70vh;
+    justify-content: space-between;
+}
+.piece .signature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5vh;
+}
+.piece img{
+    border-radius: 12px;
+}
+.piece .signature h5{
+    font-size: 1rem;
+    color: rgb(13, 128, 13);
+    font-weight: 700;
+    letter-spacing: 0.18vw;
+}
+.piece .signature p{
+    line-height: 3.5vh;
+    letter-spacing: 0.1vw;
+    font-weight: 480;
+}
+.piece .signature h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.piece .signature button{
+    background-color: rgb(13, 128, 13);
+    border: 0;
+    outline: 0;
+    width: 19.8vw;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 2.4vh 0.5vw;
+}
+.buttonTypes{
+    display: flex;
+    justify-content: center;
+    gap: 0.6vw;
+    padding-bottom: 4.8vh;
+}
+button{
+  border-radius: 6px;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.5vh 2.5vw;
+  background-color: rgba(192, 255, 192, 0.415);
+  color: darkgreen;
+}
+.buttonTypes button:first-child{
+    background-color: white;
+    color:darkgreen;
+    border: 1px solid darkgreen;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+    padding-bottom: 4vh;
+}
+.row .child{
+    background-color: white;
+    padding: 0vh 0vw 3vh 0vw;
+    border-radius: 10px;
+    width: 17vw;
+}
+.row .child img{
+    border-radius: 10px;
+    padding-bottom: 1.8vh;
+    width: 17vw;
+    height: 35vh;
+}
+.row .child .content .price{
+    color: darkgreen;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.row .child .content .save{
+    color: rgb(6, 165, 6);
+    font-weight: 700;
+}
+.row .child .content .strike{
+    font-size: 0.89rem;
+}
+.row .child .content button{
+    background-color: darkgreen;
+    color: white;
+    font-weight: 600;
+    width: 12vw;
+    font-size: 0.8rem;
+}
+.shopif{
+    display: flex;
+    justify-content: center;
+}
+.shopping{
+    height: 60vh;
+}
+footer{
+    width: 100%;
+    height: 60vh;
 }
