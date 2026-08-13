@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    margin:0;
+    margin: 0;
+}
+.pliant{
+    font-family: "Pliant", sans-serif;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.lato{
+    font-family: "Lato", sans-serif;
+}
+.grey{
+    color: grey;
 }
 .flex-column{
     display: flex;
@@ -27,8 +43,106 @@ main{
 .sidebar .media{
     height: 3vh;
 }
+.sidebar .icons{
+    padding-bottom: 2vh;
+}
 .scrollbar{
     width: 30vw;
     height: 100vh;
+    padding: 0vh 1.8vw;
+    gap: 3vh;
     background-color: #111b21;
+    color: #ffffff;
+}
+.scrollbar .upperpart{
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 0vw 0vh 0vw;
+}
+.scrollbar .upperpart .svgicons{
+    display: flex;
+    gap: 2vw;
+    padding-top: 0.4vh;
+}
+.scrollbar .searchbar{
+    display: flex;
+    gap: 1vw;
+    width: 28vw;
+    border-radius: 25px;
+    padding: 1.5vh 1vw;
+    background-color: #202c33;
+}
+.scrollbar .searchbar input{
+    background-color: #202c33;
+    border: 0;
+    outline: 0;
+    font-family: "Roboto", sans-serif;
+    width: 20vw;
+    font-size: 1rem;
+}
+.scrollbar .buttonGroup{
+    display: flex;
+    gap: 1vw;
+}
+.scrollbar .buttonGroup button{
+    border: 1px solid #202c33;
+    background-color: #111b21;
+    color: white;
+    font-family: "Roboto",sans-serif;
+    padding: 0.8vh 0.8vw;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.scrollbar .buttonGroup .greenry{
+    background-color: #005c4b;
+}
+.hero-section{
+    width: 65vw;
+    height: 100vh;
+    gap: 3vh;
+    background-color: #202c33;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+.hero-section .container{
+    justify-content: center;
+    align-items: center;
+    gap: 2.8vh;
+    background-color: #111b21;
+    padding: 3vh 2.8vw;
+    border-radius: 18px;
+}
+.hero-section .container h2{
+    font-weight: 400;
+}
+.hero-section .container button{
+    background-color: #005c4b;
+    border-radius: 18px;
+    border: 0;
+    outline: 0;
+    padding: 1vh 1vw;
+    color: white;
+    font-size: 1rem;
+}
+.hero-section .container img{
+    width: 10vw;
+    padding: 6vh 0vw 4vh 0vw;
+}
+.hero-section .group{
+    display: flex;
+    gap: 2.8vw;
+}
+.hero-section .group .child{
+    gap: 1.8vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.hero-section .group .child svg{
+    width: 2vw;
+    background-color: #344047;
+    padding: 1.2vh 1vw;
+    border-radius: 18px;
 }
