@@ -96,6 +96,44 @@ main{
 .scrollbar .buttonGroup .greenry{
     background-color: #005c4b;
 }
+.scrollbar .lockedChats{
+    padding-top: 1.8vh;
+    display: flex;
+    gap: 3vw;
+    padding-left: 1vw;
+    align-items: center;
+    font-size: 1rem;
+}
+.scrollbar .archive{
+    padding-top: 1.8vh;
+    display: flex;
+    gap: 3vw;
+    padding-left: 1vw;
+    align-items: center;
+    font-size: 1rem;
+}
+.scrollbar .profile-icons .profile{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+    padding-top: 1.5vh;
+    padding-left: 0.5vw;
+}
+.scrollbar .profile-icons .profile img{
+    width: 3vw;
+    border-radius: 50%;
+}
+.scrollbar .profile-icons .profile .content{
+    gap: 1vh;
+    width: 24vw;
+}
+.scrollbar .profile-icons .profile .content .tag{
+    display: flex;
+    justify-content: space-between;
+}
+.scrollbar .profile-icons .profile .content h6{
+    font-size: 1rem;
+}
 .hero-section{
     width: 65vw;
     height: 100vh;
