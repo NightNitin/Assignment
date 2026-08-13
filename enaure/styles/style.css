@@ -301,9 +301,12 @@ footer{
     width: 100%;
     height: 80vh;
     background-color: rgb(39, 30, 30);   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 footer .rows{
-    padding: 8vh 6vw 8vh 9vw;
+    padding: 8vh 6vw 0vh 9vw;
     display: flex;
     gap: 8vw;
     font-size: 0.88rem;
@@ -328,4 +331,57 @@ footer .rows .cols ul{
 }
 .rows .whitery{
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh
+}
+.rows .whitery .phone, .mail{
+    display: flex;
+    gap: 0.8vw;
+}
+.rows .whitery svg{
+    width: 1vw;
+}
+.rows .whitery .address{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4vh;
+}
+.rows .whitery .address .det{
+    font-size: 0.8rem;
+    font-family: "Google Sans Flex", sans-serif;
+    color: rgb(173, 172, 172);
+}
+.rows .whitery .address .title{
+    font-family: "Roboto", sans-serif;
+}
+.bottombar{
+    justify-content: space-between;
+    /* border-top: 0.5px solid rgba(202, 240, 168, 0.786); */
+}
+.bottombar .content{
+    display: flex;
+    gap: 0.5vw;
+    padding-top: 0.9vh;
+    color: rgba(202, 240, 168, 0.786);
+}
+.bottombar .buttonGroup{
+    display: flex;
+    gap: 1vw;
+    color: rgba(202, 240, 168, 0.786);
+    padding-bottom: 4vh;
+}
+.bottombar .buttonGroup button{
+    display: flex;
+    gap: 1.8vw;
+    border-radius: 18px;
+    padding: 0.8vh 1vw 0.8vh 1vw;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(202, 240, 168, 0.786);;
+}
+.bottombar .buttonGroup .cod{
+    padding-top: 0.5vh;
 }
