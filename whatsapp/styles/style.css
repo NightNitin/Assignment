@@ -48,16 +48,33 @@ main{
 }
 .scrollbar{
     width: 30vw;
-    height: 100vh;
+    height: auto;
+    /* height: 100vh; */
     padding: 0vh 1.8vw;
     gap: 3vh;
     background-color: #111b21;
     color: #ffffff;
 }
+.scrollbar .fixit{
+    gap: 3vh;
+    position: fixed;
+    /* top: 4vh; */
+    background-color: #111b21;
+    padding-top: 4vh;
+    z-index: 600;
+}
+.scrollbar .scrollit{
+    /* padding-top: 26vh; */
+    padding: 26vh 1vw 0vh 1vw;
+    height: 80vh;
+    gap:2vh;
+    background-color: #111b21;;
+    overflow-y: scroll;
+}
 .scrollbar .upperpart{
     display: flex;
     justify-content: space-between;
-    padding: 3vh 0vw 0vh 0vw;
+    padding: 0vh 0vw 0vh 0vw;
 }
 .scrollbar .upperpart .svgicons{
     display: flex;
@@ -111,6 +128,9 @@ main{
     padding-left: 1vw;
     align-items: center;
     font-size: 1rem;
+}
+.scrollbar .profile-icons{
+    gap: 3vh;
 }
 .scrollbar .profile-icons .profile{
     display: flex;
