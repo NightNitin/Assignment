@@ -2,12 +2,20 @@
 *{
     margin:0;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .roboto{
     font-family: "Roboto", sans-serif;
 }
 .flex-column{
     display: flex;
     flex-direction: column;
+}
+body{
+    height: 100vh;
+    display: flex;
 }
 .sidebar{
     width: 15vw;
@@ -17,8 +25,10 @@
     display: flex;
     gap: 1vw;
     padding: 1vh 1vw 1vh 1.38vw;
+    height: 6vh;
 }
-.sidebar .fixed-icons svg{
+.sidebar .fixed-icons a svg{
+    padding-top: 1vh;
     width:1.6vw;
     color: white;
 }
@@ -26,7 +36,7 @@
     width: 8vw;
 }
 .sidebar .scroll-icons{
-    height: 100vh;
+    height: 91.89vh;
     overflow-y: scroll;
 }
 .sidebar .scroll-icons::-webkit-scrollbar{
@@ -37,21 +47,83 @@
 }
 .sidebar .scroll-icons::-webkit-scrollbar-thumb{
     background-color: grey;
-    border-radius: 18px;
+    border-radius: 28px;
 }
 .sidebar .scroll-icons .home{
-    padding: 1vh 0.2vw 1vh 0.7vw;
-    gap: 1vh;
-}
-.sidebar .scroll-icons .home .content{
-    display: flex;
-    gap: 1vw;
-    align-items: center;
+    padding: 2vh 0.2vw 3vh 1.4vw;
+    gap: 2vh;
+    border-bottom: 0.5px solid rgb(80, 80, 80);
     color: white;
     font-size: 0.88rem;
 }
-.sidebar .scroll-icons .home .content .home{
+.sidebar .scroll-icons .home .content{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+}
+.sidebar .scroll-icons .home .content .icons{
     width: 1.8vw;
     height: 1.8vh;
     color: white;
+}
+.sidebar .scroll-icons .home .content img{
+    height: 3vh;
+    border-radius: 50%;
+}
+.sidebar .scroll-icons .links{
+    gap: 2vh;
+    font-size: 0.84rem;
+    color: grey;
+    padding: 2vh 1vw 1.4vh 1vw;
+}
+.sidebar .scroll-icons .links a{
+    color: rgb(190, 188, 188);
+    font-weight: 500;
+}
+.sidebar .scroll-icons .links .child{
+    display: flex;
+    gap: 0.8vw;
+}
+.sidebar .scroll-icons .links .primary,.privacy{
+    gap:0.4vh;
+}
+main{
+    width: 85vw;
+    height: 100vh;
+    background-color: #0F0F0F;
+}
+nav{
+    height: 10vh;
+    padding: 1vh 5vw;
+}
+.searchbar{
+    display: flex;
+    position: relative;
+    left: 10vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 34vw;
+    height: 4.6vh;
+    padding: 0vh 0vw 0vh 1vw; 
+    background-color: #0F0F0F;
+    border: 0.2px solid rgba(80, 80, 80, 0.66);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.searchbar input{
+    border: none;
+    background-color: #0F0F0F;
+    border-radius: 25px;
+    padding: 0;
+    font-size: 1rem;
+    width: 32vw;
+    height: 4.4vh;
+}
+.searchbar .searchicon{
+    background-color: rgba(80, 80, 80, 0.66);
+    padding: 1.6vh 0.5vw 1.6vh 0.8vw;
+}
+.searchbar .searchicon svg{
+    color: white;
+    height: 8.8vh;
 }
