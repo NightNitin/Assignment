@@ -93,13 +93,18 @@ main{
     background-color: #0F0F0F;
 }
 nav{
-    height: 10vh;
-    padding: 1vh 5vw;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 1vh 1.84vw 0vh 15vw;
+}
+.left-icons{
+    display: flex;
+    gap: 1vw;
+    padding-top: 0.2vh;
 }
 .searchbar{
     display: flex;
-    position: relative;
-    left: 10vw;
     justify-content: space-between;
     align-items: center;
     width: 34vw;
@@ -126,4 +131,38 @@ nav{
 .searchbar .searchicon svg{
     color: white;
     height: 8.8vh;
+}
+nav .audio svg{
+    width: 1.4vw;
+    color:white;
+    background-color: rgba(80, 80, 80, 0.66);
+    padding: 0.8vh 0.8vh;
+    border-radius: 50%;
+}
+nav .right-icons{
+    display: flex;
+    gap: 1vw;
+}
+nav .right-icons .notification svg{
+    width: 1.8vw;
+    padding-top: 0.48vh;
+}
+nav .right-icons .account img{
+    width: 1.8vw;
+    border-radius: 50%;
+}
+.buttonGroup{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vw 0vh 1vw;
+}
+.buttonGroup button{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(80, 80, 80, 0.66);
+    color: white;
+    padding: 0.8vh 0.8vw;
+    border-radius: 6px;
+    font-weight: 500;
+    border: 0;
+    outline: 0;
 }
