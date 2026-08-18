@@ -37,14 +37,17 @@ main{
     color: white;
     padding: 2vh 0vw 1vh 1.4vw;
 }
-.sidebar .uppericons .status{
-    height: 3vh;
-}
 .sidebar .media{
     height: 3vh;
 }
 .sidebar .icons{
     padding-bottom: 2vh;
+}
+.sidebar .icons svg{
+    height: 3.5vh;
+}
+.sidebar .icons .you{
+    height: 6vh;
 }
 .scrollbar{
     width: 30vw;
@@ -64,12 +67,22 @@ main{
     z-index: 600;
 }
 .scrollbar .scrollit{
-    /* padding-top: 26vh; */
+    /*top: 26vh; */
     padding: 26vh 1vw 0vh 1vw;
     height: 80vh;
     gap:2vh;
     background-color: #111b21;;
     overflow-y: scroll;
+}
+.scrollbar .scrollit::-webkit-scrollbar{
+    width: 0.4rem;
+}
+.scrollbar .scrollit::-webkit-scrollbar-track{
+    background-color: #111b21;
+}
+.scrollbar .scrollit::-webkit-scrollbar-thumb{
+    background-color: #202c33;
+    border-radius: 18px;
 }
 .scrollbar .upperpart{
     display: flex;
