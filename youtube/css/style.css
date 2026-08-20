@@ -112,7 +112,7 @@ main::-webkit-scrollbar-thumb{
     height: auto;
     background-color: #0f0f0fd3;
     /* background-color: #1b1b1baf; */
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(18px);
 }
 nav{
     display: flex;
@@ -231,10 +231,12 @@ nav .right-icons .account img{
 }
 .videos{
     padding: 18vh 2vw ;
+    gap: 3vh;
 }
 .videos .row{
     display: flex;
     gap: 1vw;
+    height: 50vh;
     font-family: "Roboto", sans-serif;
 }
 .videos .row .child{
@@ -255,7 +257,7 @@ nav .right-icons .account img{
     display: flex;
     gap: 0.6vw;
 }
-.videos .row .child .para .dots{
+.dots{
     width: 2.6vw;
     height: 3.5vh;
     color: white;
@@ -302,4 +304,42 @@ nav .right-icons .account img{
 .videos .row .child .buttonrow button:first-child{
     background-color: rgba(80, 80, 80, 0.66);
     color: white;
+}
+.videos .shorts{
+    display: flex;
+    gap: 0.6vw;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+}
+.videos .record{
+    display: flex;
+    gap: 0.8vw;
+    height: 65vh;
+}
+.videos .record .child{
+    color: white;
+    gap: 0.4vh;
+    width: 15.6vw;
+}
+.videos .record .child .content .text{
+    line-height: 2.9vh;
+}
+.videos .record .child .tag{
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.videos .record .child .views{
+    font-size: 0.88rem;
+}
+.videos .record .child img{
+    height: 54vh;
+    width: 15.6vw;
+    border-radius: 10px;
+    padding-bottom: 1vh;
+}
+.videos .record .child .content{
+    display: flex;
+    justify-content: space-between;
 }
