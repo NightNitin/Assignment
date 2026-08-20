@@ -6,8 +6,14 @@ a{
     text-decoration: none;
     color: white;
 }
+button:hover{
+    cursor: pointer;
+}
 .roboto{
     font-family: "Roboto", sans-serif;
+}
+.white{
+    color: white;
 }
 .grey{
     color: grey;
@@ -197,4 +203,61 @@ nav .right-icons .account img{
     width: 1.8vw;
     padding-top: 0.4vh;
     border-radius: 50%;
+}
+main .upperpart{
+    gap: 1vh;
+    height: auto;
+    border-bottom: 0.5px solid rgba(166, 165, 165, 0.385);
+}
+main .profile{
+    padding: 12vh 0vw 5vh 5.4vw;
+    display: flex;
+    gap: 1vw;
+}
+main .profile img{
+    height: 20vh;
+}
+main .profile .content{
+    color: rgba(239, 237, 237, 0.925);
+    gap: 1vh;
+}
+main .profile .content .link{
+    font-size: 0.89rem;
+}
+main .profile .content .buttonRow{
+    display: flex;
+    gap: 0.5vw;
+}
+main .profile .content .buttonRow button{
+    padding: 1.4vh 1.1vw;
+    background-color: rgba(80, 80, 80, 0.489);
+    backdrop-filter: blur(18px);
+    color: white;
+    border: 0;
+    outline: 0;
+    font-weight: 600;
+    border-radius: 18px;
+}
+main .choice{
+    padding: 0vh 5.4vw 0vh 5.4vw;
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    border-bottom: 0.5 px solid grey;
+}
+main .choice .cont{
+    display: flex;
+    gap:2vw;
+    padding-bottom: 1.8vh;
+}
+main .choice a{
+    font-weight: 600;
+    font-size: 1rem;
+}
+main .choice svg{
+    color: grey;
+}
+main .choice .playlists{
+    padding-bottom: 1.8vh;
+    border-bottom: 2px solid #ffffff;
 }
