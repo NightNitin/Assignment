@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.roboto{
+    font-family: "Roboto", sans-serif;
+}
+.grey{
+    color: grey;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+body{
+    height: auto;
+    display: flex;
+}
+.sidebar{
+    width: 15vw;
+    background-color: #0F0F0F;
+    height: 100vh;
+}
+.sidebar .fixed-icons{
+    display: flex;
+    gap: 1vw;
+    padding: 1vh 1vw 1vh 1.38vw;
+    height: 6vh;
+}
+.sidebar .fixed-icons a svg{
+    padding-top: 1vh;
+    width:1.6vw;
+    color: white;
+}
+.sidebar .fixed-icons  img{
+    width: 8vw;
+}
+.sidebar .scroll-icons{
+    height: 91.89vh;
+    overflow-y: scroll;
+}
+.sidebar .scroll-icons::-webkit-scrollbar{
+    width: 0.4rem;
+}
+.sidebar .scroll-icons::-webkit-scrollbar-track{
+    background-color: #0F0F0F;
+}
+.sidebar .scroll-icons::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 28px;
+}
+.sidebar .scroll-icons .home{
+    padding: 2vh 0.2vw 3vh 1.4vw;
+    gap: 2vh;
+    border-bottom: 0.5px solid rgb(80, 80, 80);
+    color: white;
+    font-size: 0.88rem;
+}
+.sidebar .scroll-icons .home .content{
+    display: flex;
+    gap: 1.5vw;
+    align-items: center;
+}
+.sidebar .scroll-icons .home .content .icons{
+    width: 1.8vw;
+    height: 1.8vh;
+    color: white;
+}
+.sidebar .scroll-icons .home .content img{
+    height: 3vh;
+    border-radius: 50%;
+}
+.sidebar .scroll-icons .links{
+    gap: 2vh;
+    font-size: 0.84rem;
+    color: grey;
+    padding: 2vh 1vw 1.4vh 1vw;
+}
+.sidebar .scroll-icons .links a{
+    color: rgb(190, 188, 188);
+    font-weight: 500;
+}
+.sidebar .scroll-icons .links .child{
+    display: flex;
+    gap: 0.8vw;
+}
+.sidebar .scroll-icons .links .primary,.privacy{
+    gap:0.4vh;
+}
+main{
+    width: 85vw;
+    height: 100vh;
+    background-color: #0F0F0F;
+    overflow-y: scroll;
+}
+main::-webkit-scrollbar{
+    width: 0.4rem;
+}
+main::-webkit-scrollbar-track{
+    background-color: #0F0F0F;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 28px;
+}
+.fixer{
+    position: fixed;
+    height: auto;
+    background-color: #0f0f0fd3;
+    /* background-color: #1b1b1baf; */
+    backdrop-filter: blur(18px);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8vh;
+    padding: 1vh 1vw 0vh 15vw;
+}
+.left-icons{
+    display: flex;
+    gap: 1vw;
+    padding-top: 0.2vh;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34vw;
+    height: 4.6vh;
+    padding: 0vh 0vw 0vh 1vw; 
+    background-color: #0F0F0F;
+    border: 0.2px solid rgba(80, 80, 80, 0.66);
+    border-radius: 25px;
+    overflow: hidden;
+}
+.searchbar input{
+    border: none;
+    background-color: #0F0F0F;
+    border-radius: 25px;
+    padding: 0;
+    font-size: 1rem;
+    width: 32vw;
+    height: 4.4vh;
+}
+.searchbar .searchicon{
+    background-color: rgba(80, 80, 80, 0.66);
+    padding: 1.6vh 0.5vw 1.6vh 0.8vw;
+}
+.searchbar .searchicon svg{
+    color: white;
+    height: 8.8vh;
+}
+nav .audio svg{
+    width: 1.4vw;
+    color:white;
+    background-color: rgba(80, 80, 80, 0.66);
+    padding: 0.8vh 0.8vh;
+    border-radius: 50%;
+}
+nav .right-icons{
+    display: flex;
+    gap: 1vw;
+}
+nav .right-icons .new{
+   padding-top: 0.48vh; 
+}
+nav .right-icons .new button{
+    display: flex;
+    gap: 0.38vw;
+    background-color: rgba(80, 80, 80, 0.66);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 18px;
+    padding: 1.18vh 1.4vw;
+    font-weight: 600;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+}
+nav .right-icons .new button:hover{
+    cursor: pointer;
+}
+nav .right-icons .new svg{
+    width: 1vw;
+}
+nav .right-icons .notification svg{
+    width: 1.98vw;
+    padding-top: 0.48vh;
+}
+nav .right-icons .account img{
+    width: 1.8vw;
+    padding-top: 0.4vh;
+    border-radius: 50%;
+}
