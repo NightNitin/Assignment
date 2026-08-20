@@ -9,6 +9,9 @@ a{
 .roboto{
     font-family: "Roboto", sans-serif;
 }
+.grey{
+    color: grey;
+}
 .flex-column{
     display: flex;
     flex-direction: column;
@@ -92,6 +95,10 @@ main{
     height: 100vh;
     background-color: #0F0F0F;
 }
+.fixer{
+    position: fixed;
+    height: auto;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -148,21 +155,112 @@ nav .right-icons .notification svg{
     padding-top: 0.48vh;
 }
 nav .right-icons .account img{
-    width: 1.8vw;
+    width: 1.7vw;
+    padding-top: 0.2vh;
     border-radius: 50%;
 }
 .buttonGroup{
     display: flex;
-    justify-content: space-between;
-    padding: 0vh 0vw 0vh 1vw;
+    gap: 0.4vw;
+    padding: 0vh 0vw 1vh 1vw;
+}
+.buttonGroup button:hover{
+    cursor: pointer;
 }
 .buttonGroup button{
     font-family: "Roboto", sans-serif;
     background-color: rgba(80, 80, 80, 0.66);
     color: white;
-    padding: 0.8vh 0.8vw;
+    padding: 0.7vh 0.6vw;
     border-radius: 6px;
     font-weight: 500;
     border: 0;
     outline: 0;
+}
+.buttonGroup button:first-child{
+    background-color: #ffffff;
+    color: #0F0F0F;
+}
+.buttonGroup button:last-child{
+    border-radius: 50%;
+   width: 2vw;
+   padding: 0;
+   background-color: #0F0F0F;
+}
+.buttonGroup button .arrow{
+    width: 3vw;
+    color: white;
+}
+.videos{
+    padding: 21vh 2vw ;
+}
+.videos .row{
+    display: flex;
+    gap: 1vw;
+    font-family: "Roboto", sans-serif;
+}
+.videos .row .child{
+    gap: 2vh;
+    width: 25vw;
+}
+.videos .row .child img{
+    width: 25vw;
+    height: 30vh;
+    border-radius: 12px;
+}
+.videos .row .child .para{
+    display: flex;
+    justify-content: space-between;
+    padding: 0vh 0vw 0vh 0.6vw;
+}
+.videos .row .child .para .logo-para{
+    display: flex;
+    gap: 0.6vw;
+}
+.videos .row .child .para .dots{
+    width: 1.8vw;
+    height: 3.5vh;
+    color: white;
+}
+.videos .row .child .para img{
+    border-radius: 50%;
+    height: 3vh;
+    width: 3vh;
+}
+.videos .row .child .para .logo-para .context{
+    gap: 0.4vh;
+}
+.videos .row .child .para .logo-para .context .title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.videos .row .child .para .logo-para .context .ad{
+    display: flex;
+    align-items: center;
+}
+.videos .row .child .para .logo-para .context strong{
+    font-size: 0.89rem;
+}
+.videos .row .child .para .logo-para .context span{
+    font-size: 0.8rem;
+}
+.videos .row .child .buttonrow{
+    display: flex;
+    gap: 0.2vw;
+}
+.videos .row .child .buttonrow button:hover{
+    cursor: pointer;
+}
+.videos .row .child .buttonrow button{
+    font-family: "Roboto", sans-serif;
+    width: 12.6vw;
+    padding: 1.2vh 0vw;
+    border-radius: 18px;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+}
+.videos .row .child .buttonrow button:first-child{
+    background-color: rgba(80, 80, 80, 0.66);
+    color: white;
 }
