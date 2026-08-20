@@ -17,12 +17,13 @@ a{
     flex-direction: column;
 }
 body{
-    height: 100vh;
+    height: auto;
     display: flex;
 }
 .sidebar{
     width: 15vw;
     background-color: #0F0F0F;
+    height: 100vh;
 }
 .sidebar .fixed-icons{
     display: flex;
@@ -94,10 +95,24 @@ main{
     width: 85vw;
     height: 100vh;
     background-color: #0F0F0F;
+    overflow-y: scroll;
+}
+main::-webkit-scrollbar{
+    width: 0.4rem;
+}
+main::-webkit-scrollbar-track{
+    background-color: #0F0F0F;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 28px;
 }
 .fixer{
     position: fixed;
     height: auto;
+    background-color: #0f0f0fd3;
+    /* background-color: #1b1b1baf; */
+    backdrop-filter: blur(8px);
 }
 nav{
     display: flex;
