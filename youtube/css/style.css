@@ -103,7 +103,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 8vh;
-    padding: 1vh 1.84vw 0vh 15vw;
+    padding: 1vh 1vw 0vh 15vw;
 }
 .left-icons{
     display: flex;
@@ -150,13 +150,36 @@ nav .right-icons{
     display: flex;
     gap: 1vw;
 }
+nav .right-icons .new{
+   padding-top: 0.48vh; 
+}
+nav .right-icons .new button{
+    display: flex;
+    gap: 0.38vw;
+    background-color: rgba(80, 80, 80, 0.66);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 18px;
+    padding: 1.18vh 1.4vw;
+    font-weight: 600;
+    align-items: center;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+}
+nav .right-icons .new button:hover{
+    cursor: pointer;
+}
+nav .right-icons .new svg{
+    width: 1vw;
+}
 nav .right-icons .notification svg{
-    width: 1.8vw;
+    width: 1.98vw;
     padding-top: 0.48vh;
 }
 nav .right-icons .account img{
-    width: 1.7vw;
-    padding-top: 0.2vh;
+    width: 1.8vw;
+    padding-top: 0.4vh;
     border-radius: 50%;
 }
 .buttonGroup{
@@ -192,7 +215,7 @@ nav .right-icons .account img{
     color: white;
 }
 .videos{
-    padding: 21vh 2vw ;
+    padding: 18vh 2vw ;
 }
 .videos .row{
     display: flex;
@@ -201,24 +224,24 @@ nav .right-icons .account img{
 }
 .videos .row .child{
     gap: 2vh;
-    width: 25vw;
+    width: 26.5vw;
 }
 .videos .row .child img{
-    width: 25vw;
+    width: 26.5vw;
     height: 30vh;
     border-radius: 12px;
 }
 .videos .row .child .para{
     display: flex;
     justify-content: space-between;
-    padding: 0vh 0vw 0vh 0.6vw;
+    padding: 0vh 0vw 0vh 0vw;
 }
 .videos .row .child .para .logo-para{
     display: flex;
     gap: 0.6vw;
 }
 .videos .row .child .para .dots{
-    width: 1.8vw;
+    width: 2.6vw;
     height: 3.5vh;
     color: white;
 }
@@ -231,12 +254,13 @@ nav .right-icons .account img{
     gap: 0.4vh;
 }
 .videos .row .child .para .logo-para .context .title{
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
 }
 .videos .row .child .para .logo-para .context .ad{
     display: flex;
-    align-items: center;
+    gap: 0.8vw;
+    text-align: center;
 }
 .videos .row .child .para .logo-para .context strong{
     font-size: 0.89rem;
