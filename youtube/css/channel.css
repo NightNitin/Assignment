@@ -258,6 +258,48 @@ main .choice svg{
     color: grey;
 }
 main .choice .playlists{
-    padding-bottom: 1.8vh;
+    padding-bottom: 1.84vh;
     border-bottom: 2px solid #ffffff;
+}
+main .lowerpart{
+    padding: 2.8vh 4.4vw 12vh 5.4vw;
+}
+main .lowerpart .sort{
+    display: flex;
+    gap: 0.6vw;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+main .lowerpart .sort p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+main .lowerpart .sort svg{
+    color: white;
+}
+main .lowerpart .row{
+    display: flex;
+    gap: 0.3vw;
+    padding-top: 2vh;
+    padding-bottom: 14vh;
+    align-items: center;
+}
+main .lowerpart .row .child{
+    gap: 0.5vh;
+    height: 10vh;
+}
+main .lowerpart .row .child img{
+    width: 12.2vw;
+    border-radius: 12px;
+    padding-bottom: 0.4vh;
+}
+main .lowerpart .row .child .tag{
+    font-size: 0.9rem;
+    font-weight: 500;
+} 
+main .lowerpart .row .child .subtag{
+    font-size: 0.78rem;
+}
+main .lowerpart .row .child .subtag:last-child{
+    font-weight: 600;
 }
