@@ -210,8 +210,7 @@ main .heist{
 main .watch{
     display: flex;
     padding: 10vh 5vw;
-    width: 43vw;
-    /* background-color: aqua; */
+    width: 46vw;
     color: rgba(255, 255, 255, 0.9);
 }
 main .watch .history{
@@ -248,11 +247,12 @@ main .watch .history .shorts{
 main .watch .history .shortsrow{
     display: flex;
     gap: 0.4vw;
-    padding: 1vh 0vw;
+    padding: 1vh 0vw 2.8vh 0vw;
+    border-bottom: 0.5px solid rgba(176, 175, 175, 0.518);
 }
 main .watch .history .shortsrow .rank{
     display: flex;
-    width: 11.6vw;
+    width: 12.2vw;
     justify-content: space-between;
 }
 main .watch .history .shortsrow .show{
@@ -268,7 +268,7 @@ main .watch .history .shortsrow .show .share{
     align-items: flex-start;
 }
 main .watch .history .shortsrow .show img{
-    width: 11.6vw;
+    width: 12.2vw;
     height: 39vh;
     border-radius: 8px;
 }
@@ -279,12 +279,58 @@ main .watch .history .shortsrow .show .context{
 main .watch .history .shortsrow .show .grey{
     font-size: 0.89rem;
 }
+.shortsrow .arrow{
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    height: 5vh;
+    width: 5vh;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    position: relative;
+    top: 15vh;
+    right: 4.4vh;
+}
 main .dots{
     color: white;
     width: 1.8vw;
 }
+main .history-videos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 50vw;
+    padding-bottom: 0.4vh;
+}
+main .history-videos .cont{
+    display: flex;
+    gap: 1.2vw;
+}
+main .history-videos svg{
+    align-self: flex-start;
+    padding-top: 1.2vh;
+}
+main .history-videos .writing{
+    padding-top: 0.8vh;
+    gap: 1.2vh;
+}
+main .history-videos .writing .tag{
+    font-weight: 480;
+    font-size: 0.9rem;
+}
+main .history-videos .writing .subtag{
+    font-size: 0.8rem;
+}
+main .history-videos img{
+    width: 16vw;
+    height: 18vh;
+    border-radius: 8px;
+}
 main .rightset{
-    width: 23vw;
+    width: 20vw;
     color: white;
     padding: 10vh;
     /* background-color: aquamarine; */
