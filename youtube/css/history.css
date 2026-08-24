@@ -332,6 +332,42 @@ main .history-videos img{
 main .rightset{
     width: 20vw;
     color: white;
-    padding: 10vh;
+    padding: 18vh 60vw;
+    position: fixed;
+    gap: 3vh;
     /* background-color: aquamarine; */
+}
+main .rightset svg{
+    width: 1.4vw;
+}
+main .rightset .searchy{
+    display: flex;
+    gap: 0.6vw;
+    position: relative;
+    left: 4vw;
+    padding: 0.6vh 0.2vw;
+    width: 14vw;
+    font-size: 0.8rem;
+    border-bottom: 0.5px solid #ffffff;
+    background-color: #0F0F0F;
+}
+main .rightset .searchy input{
+    background-color: #0F0F0F;
+    outline: 0;
+    border: 0;
+    color: #ffffff;
+}
+main .rightset .rowh{
+    padding: 0vh 0vw 0vh 4vw;
+    display: flex;
+    font-size: 0.89rem;
+    font-weight: 500;
+    /* background-color: aquamarine; */
+    gap: 0.4vw;
+    align-items: center;
+}
+main .rightset .text{
+    padding-left: 6vw;
+    font-size: 0.87rem;
+    font-weight: 500;
 }
