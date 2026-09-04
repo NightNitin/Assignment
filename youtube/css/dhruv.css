@@ -119,6 +119,7 @@ main::-webkit-scrollbar-thumb{
 .fixer{
     position: fixed;
     height: 8vh;
+    z-index: 100;
      background-color: #0F0F0F;
 }
 nav{
@@ -126,7 +127,7 @@ nav{
     justify-content: space-between;
     width: 100%;
     background-color: #0F0F0F;
-    height: 8vh;
+    height: 7vh;
     padding: 1vh 1vw 0vh 15vw;
 }
 .left-icons{
@@ -282,6 +283,9 @@ nav .right-icons .account img{
     display: flex;
     gap: 1vw;
     position: sticky;
+    top: 6vh;
+    z-index: 100;
+    background-color: #0F0F0F;
     align-items: center;
     padding: 3vh 0vw 0vh 4vw;
     border-bottom: 0.2px solid rgb(99, 98, 98);
@@ -348,8 +352,83 @@ main .context .foryou{
     padding: 2vh 0vw;
     gap: 2.6vh;
 }
+main .context .foryou .videos{
+    display: flex;
+    gap: 0.4vw;
+    padding-bottom: 3vh;
+    width: 70vw;
+    border-bottom: 0.3px solid rgb(99, 98, 98);
+}
+main .context .foryou .video{
+    gap: 0.4vh;
+    width: 22vw;
+}
 main .context .foryou .video img{
     width: 22vw;
     border-radius: 12px;
-    /* height: 40vh; */
+}
+main .context .foryou .video .headtext{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.1vw;
+}
+main .context .foryou .video .headtext .txt{
+    font-size: 0.86rem;
+    font-weight: 500;
+    line-height: 2.4vh;
+}
+main .context .foryou .video .subtext{
+    font-size: 0.8rem;
+    padding-left: 0.1vw;
+}
+main .context .foryou .videos .arrow{
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    height: 5vh;
+    width: 5vh;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    position: relative;
+    top: 10vh;
+    right: 4.34vh;
+}
+main .context .viral{
+    padding: 2vh 0vw;
+    gap: 2.6vh;
+}
+main .context .viral .viralVideo{
+    display: flex;
+    gap: 0.1vw;
+    padding-bottom: 3vh;
+    width: 70vw;
+    border-bottom: 0.3px solid rgb(99, 98, 98);
+}
+main .context .viral .viralVideo .video{
+    width: 13.3vw;
+    gap: 0.4vh;
+}
+main .context .viral .viralVideo .video img{
+    width: 13vw;
+    height: 15vh;
+}
+main .context .viral .viralVideo .video .headtext{
+    display: flex;
+    justify-content: space-between;
+}
+main .context .viral .viralVideo .video .headtext .txt{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+main .context .viral .viralVideo .video .subtext{
+    font-size: 0.7rem;
+
+}
+.dots{
+    width: 2.6vw;
+    height: 3.5vh;
+    color: white;
 }
