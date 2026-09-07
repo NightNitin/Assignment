@@ -444,7 +444,7 @@ footer .address {
     display: none;
   }
   .logo-CSS img {
-    height: 4.8vh;
+    height: 3.2vh;
   }
   .nav-links {
     width: 100%;
@@ -466,25 +466,25 @@ footer .address {
     justify-content: center;
     background-color: #540599;
     color: white;
-    height: 4.8vh;
-    width: 4.8vh;
+    height: 3.2vh;
+    width: 3.2vh;
     border-radius: 8px;
   }
   .account svg {
-    height: 2.4vh;
+    height: 1.6vh;
   }
   .hamburger {
     display: flex;
     border: none;
     background: none;
-    height: 4.8vh;
+    height: 3.2vh;
   }
   .navbarLeft {
     display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 60vw;
+    width: 40vw;
     height: 100%;
     padding: 0vh 2vw 0vh 2vw;
     background-color: white;
@@ -493,7 +493,7 @@ footer .address {
     display: none;
     position: fixed;
     top: 0;
-    left: 60vw;
+    left: 40vw;
     height: 100%;
     width: 100vw;
     backdrop-filter: blur(18px);
@@ -505,16 +505,16 @@ footer .address {
     padding: 4vh 4vw 2vh 2vw;
   }
   .navbarLeft .logo-CSS svg{
-    height: 4vh;
+    height: 3.2vh;
   }
   .navbarLeft .logo-CSS img{
-    height: 4vh;
+    height: 3.2vh;
   }
   .navbarLeft .grey{
     padding-top: 4vh;
-    padding-left: 3vw;
+    padding-left: 2.6vw;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: rgb(107, 106, 106);
     border-top: 0.1px solid rgb(200, 199, 199);
   }
@@ -522,12 +522,12 @@ footer .address {
     display: flex;
     gap: 4vh;
     flex-direction: column;
-    padding: 2vh 8vw 4vh 5.4vw;
+    padding: 2vh 8vw 4vh 3.9vw;
   }
   .navbarLeft .links li a{
     display: flex;
     justify-content: space-between;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .navbarLeft .links li a svg{
     width: 2vw;
@@ -536,11 +536,11 @@ footer .address {
   .navbarLeft .realDash{
     display: flex;
     justify-content: center;
-    padding: 2vh 2vw;
-    width: 48vw;
+    padding: 1vh 2vw;
+    width: 28vw;
     border-radius: 12px;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: white;
     background-color: #540599;
   }
@@ -548,7 +548,7 @@ footer .address {
     display: flex;
     position: fixed;
     bottom: 4vh;
-    padding-left: 3.6vw;
+    padding-left: 2.2vw;
     padding-right: 8vw;
   }
   .navbarLeft.active {
@@ -556,6 +556,12 @@ footer .address {
   }
   .navbarRight.active{
     display: flex;
+  }
+  .hero-section img{
+    display: none;
+  }
+  .hero-section h1{
+    padding-top: 4vh;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -394,7 +394,7 @@ main .context .foryou .videos .arrow{
     outline: 0;
     position: relative;
     top: 10vh;
-    right: 4.34vh;
+    right: 3.4vh;
 }
 main .context .viral{
     padding: 2vh 0vw;
@@ -426,6 +426,21 @@ main .context .viral .viralVideo .video .headtext .txt{
 main .context .viral .viralVideo .video .subtext{
     font-size: 0.7rem;
 
+}
+.viral .viralVideo .arrow{
+    display: flex;
+    border-radius: 50%;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    height: 5vh;
+    width: 5vh;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    outline: 0;
+    position: relative;
+    top: 6vh;
+    right: 3.5vh;
 }
 .dots{
     width: 2.6vw;
