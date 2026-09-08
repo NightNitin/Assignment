@@ -35,7 +35,7 @@ nav {
   height: auto;
   display: flex;
   justify-content: space-between;
-  padding: 3vh 5vw 1vh 5vh;
+  padding: 3vh 5vw 1vh 5vw;
   font-size: 2vh;
   border-bottom: 2px solid whitesmoke;
   position: fixed;
@@ -83,6 +83,9 @@ nav {
 .dashboard img {
   height: 4.5vh;
   border-radius: 8px;
+}
+.footy{
+  display: none;
 }
 .hero-section {
   padding: 8vh 12vw 8vh 5vw;
@@ -440,10 +443,17 @@ footer .address {
   gap: 0.6rem;
 }
 @media (max-width: 768px) {
+  nav{
+    padding-left: 2vw;
+  }
   .links {
     display: none;
   }
+  .logo-CSS {
+    padding: 0vh 0vw;
+  }
   .logo-CSS img {
+    padding: 0vh 0vw;
     height: 3.2vh;
   }
   .nav-links {
@@ -560,9 +570,156 @@ footer .address {
   .hero-section img{
     display: none;
   }
-  .hero-section h1{
-    padding-top: 4vh;
+  .hero-section{
+    padding: 0vh 2vw 2vh 2vw;
   }
+  .hero-section .content .searchbar{
+    width: 100%;
+  }
+  .hero-section .content .searchbar .border{
+    width: 12vw;
+    font-size: 0.89rem;
+    font-weight: 600;
+  }
+  .hero-section .content .searchbar .bar{
+    padding: 0vh 2vw;
+  }
+  .hero-section .content .searchbar .bar svg{
+    padding-top: 1.3vh;
+  }
+  .hero-section .content .searchbar .bar input{
+    width: 72vw;
+    font-size: 1rem;
+  }
+  .hero-section .content .discount{
+    padding: 1vh 2vw;
+  }
+  .hero-section .content .types{
+    gap: 1.5vw;
+  }
+  .hero-section .content .types .typo{
+    padding: 1.2vh 2.6vw;
+  }
+  .hero-section .content .types .typo .icon{
+    width: 2.6vw;
+  }
+  .courses{
+    padding: 2.2vh 2vw;
+  }
+  .courses .types{
+    justify-content: unset;
+    gap: 1.6vw;
+  }
+  .courses .types .module{
+    width: 23vh;
+  }
+  .courses .types .module:last-child{
+    display: none;
+  }
+  .courses .types .module img{
+    width: 23vh;
+    height: 15vh;
+  }
+  .courses .types .module .content .fname{
+    font-size: 0.8rem;
+  }
+  .courses .types .module .content .program{
+    font-size: 0.89rem;
+    font-weight: 400;
+  }
+  .courses .types .module .content .price .offers .grey{
+    font-size: 0.69rem;
+  }
+  .courses .types .module .content .price .offers .border{
+    font-size: 0.57rem;
+  }
+  .compiler .content{
+    flex-direction: column;
+    justify-content: unset;
+    gap: 2vh;
+  }
+  .compiler .content a{
+    align-self: flex-start;
+  }
+  .compiler .lang .row{
+    display: none;
+  }
+  .compiler .lang .row:first-child{
+    display: flex;
+  }
+  .compiler .lang .row .child:nth-of-type(7), .child:last-child{
+    display: none;
+  }
+  .compiler .lang .row{
+    justify-content: space-between;
+  }
+  .compiler .lang .row .child img{
+    width: 10vw;
+  }
+  .compiler .lang .row .child h5{
+    font-weight: 500;
+  }
+  .interact .tutorials h2{
+    font-size: 2rem;
+  }
+  .interact .tutorials .buttons{
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .wall{
+    padding-top: 0vh;
+    padding-bottom: 4vh;
+    border-bottom: 0.5px solid rgba(177, 176, 176, 0.449);
+  }
+  .wall h2{
+    font-size: 2rem;
+  }
+  .wall .achievers .child:last-child, .child:nth-of-type(3){
+    display: none;
+  }
+  .wall .achievers .child{
+    width: 60vw;
+  }
+  .wall .achievers .child h5{
+    font-size: 1rem;
+  }
+  .wall .achievers .child .role{
+    font-weight: 800;
+    letter-spacing: 0.1vw;
+    font-size: 0.78rem;
+  }
+  .wall .achievers .child .company{
+    width: 14vw;
+    padding: 0.6vh 0.4vw;
+  }
+  .wall .achievers .child em{
+    font-size: 0.89rem;
+    word-spacing: 0.2vw;
+  }
+  .foot{
+    display: none;
+  }
+  .footy{
+    padding: 2vh 0vw 8vh 0vw;
+    display: flex;
+    align-items: center;
+    gap: 2.4vh;
+  }
+  .footy .linktam{
+    display: flex;
+    gap: 2vw;
+  }
+  .footy .linktam a{
+    text-decoration: none;
+    color: rgb(97, 96, 96);
+    font-size: 1rem;
+  }
+  .footy .text p{
+    font-size: 0.9rem;
+  }
+  /* .stickfoot .child{
+    
+  } */
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 
