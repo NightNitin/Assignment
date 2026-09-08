@@ -14,6 +14,9 @@
 .lato {
   font-family: "Lato", sans-serif;
 }
+.stickfoot{
+  display: none;
+}
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -700,7 +703,7 @@ footer .address {
     display: none;
   }
   .footy{
-    padding: 2vh 0vw 8vh 0vw;
+    padding: 2vh 0vw 10vh 0vw;
     display: flex;
     align-items: center;
     gap: 2.4vh;
@@ -712,14 +715,43 @@ footer .address {
   .footy .linktam a{
     text-decoration: none;
     color: rgb(97, 96, 96);
-    font-size: 1rem;
+    font-size: 0.92rem;
   }
   .footy .text p{
     font-size: 0.9rem;
   }
-  /* .stickfoot .child{
-    
-  } */
+  .stickfoot{
+    display: flex;
+    gap: 16.6vw;
+    position: fixed;
+    border-top: 0.5px solid rgba(193, 191, 191, 0.658);
+    height: 6vh;
+    padding: 1vh 2vw 1vh 2.5vw;
+    bottom: 0vh;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .stickfoot .click{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vh;
+    text-decoration: none;
+    color: grey;
+  }
+  .stickfoot .click svg{
+    width: 4.5vw;
+  }
+  .stickfoot .click:first-child svg{
+    color: #540599;
+  }
+  .stickfoot .click:first-child p{
+    color: #540599;
+  }
+  .stickfoot .click p{
+    font-size: 0.84rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
 
