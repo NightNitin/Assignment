@@ -1,363 +1,665 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
 }
-.pliant{
-    font-family: "Pliant", sans-serif;
+.pliant {
+  font-family: "Pliant", sans-serif;
 }
-.poppins{
-    font-family: "Poppins", sans-serif;
+.poppins {
+  font-family: "Poppins", sans-serif;
 }
-.roboto{
-    font-family: "Roboto", sans-serif;
+.roboto {
+  font-family: "Roboto", sans-serif;
 }
-.lato{
-    font-family: "Lato", sans-serif;
+.lato {
+  font-family: "Lato", sans-serif;
 }
-.flex-column{
-    display: flex;
-    flex-direction: column;
-    gap: 3vh;
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
 }
-.border{
-    border:0;
-    outline:0;
+.border {
+  border: 0;
+  outline: 0;
 }
-.purple{
-    color: #540599;
+.small-right-icons {
+  display: none;
 }
-.grey{
-    color: grey;
+.navbarLeft {
+  display: none;
 }
-nav{
-    height: auto;
+.navbarRight {
+  display: none;
+}
+.footy {
+  display: none;
+}
+.stickfoot {
+  display: none;
+}
+.purple {
+  color: #540599;
+}
+.grey {
+  color: grey;
+}
+nav {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 3vh 5vw 1vh 5vh;
+  font-size: 2vh;
+  border-bottom: 2px solid whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: white;
+  box-sizing: border-box;
+}
+.nav-links {
+  display: flex;
+}
+.logo-CSS {
+  display: flex;
+  gap: 0.8vw;
+}
+.logo-CSS h3 {
+  font-size: 25px;
+  color: rgb(64, 64, 221);
+}
+.logo-CSS img {
+  height: 4vh;
+}
+.links {
+  display: flex;
+  list-style: none;
+  gap: 2vw;
+  padding-top: 0.4vh;
+}
+.links li a {
+  text-decoration: none;
+  color: #000000;
+  word-spacing: 0.3vw;
+}
+.dashboard {
+  display: flex;
+  gap: 0.8vw;
+}
+.path {
+  font-size: 1.5vh;
+  padding-bottom: 1vh;
+  color: grey;
+}
+.dashboard img {
+  height: 4.5vh;
+  border-radius: 8px;
+}
+nav a {
+  text-decoration: none;
+}
+main .hero-section {
+  padding: 15vh 5vw 2vh 7vw;
+}
+main .hero-section .admission {
+  display: flex;
+  gap: 0.5vw;
+  border-radius: 12px;
+  outline: 0;
+  width: 10vw;
+  padding: 1vh 1vw;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: 1px solid #8206ef;
+  background-color: #cf97ff;
+}
+main .hero-section button svg {
+  width: 1vw;
+  color: #401668;
+}
+.hero-section h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 7.5vh;
+}
+.hero-section p {
+  font-weight: 600;
+}
+.hero-section .row {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .row .child {
+  display: flex;
+  gap: 1vw;
+  width: 41vw;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 12px;
+  background-color: whitesmoke;
+  padding: 1.8vh 1vw;
+}
+.hero-section .row .child .star {
+  width: 2vw;
+  background-color: #dadadb;
+  border-radius: 8px;
+  padding: 0.5vw;
+  color: #8206ef;
+}
+.hero-section .row .child .calendar {
+  width: 2vw;
+  background-color: rgba(175, 251, 175, 0.5);
+  border-radius: 8px;
+  padding: 0.5vw;
+  color: green;
+}
+.hero-section .row .child .content {
+  gap: 0.5vh;
+}
+.hero-section .row .child .content h4 {
+  font-weight: 900;
+}
+.hero-section .row .child .content p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.demo {
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 12px;
+  background-color: rgba(252, 182, 252, 0.381);
+  padding: 2.5vh 1.8vw;
+  gap: 1.5vh;
+}
+.demo .content {
+  display: flex;
+  gap: 0.5vw;
+}
+.demo .content svg {
+  width: 1.8vw;
+  color: #8206ef;
+}
+.demo p {
+  font-size: 0.9rem;
+}
+.demo button {
+  background-color: #25d366;
+  display: flex;
+  gap: 1vw;
+  border-radius: 12px;
+  border: 0;
+  margin-top: 1rem;
+  outline: 0;
+  width: 15vw;
+  padding: 1vh 1vw 1vh 1vw;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+.demo button svg {
+  width: 2.8vw;
+  color: #ffffff;
+}
+.cohorts .parent {
+  display: flex;
+  gap: 2vw;
+  width: 25vw;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 12px;
+  background-color: whitesmoke;
+  padding: 1.8vh 1vw 1.8vh 0.5vw;
+}
+.cohorts .parent .child {
+  padding: 1.5vh 1vw;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+.cohorts .parent .whiteB {
+  background-color: #ffffff;
+}
+.filter .domain {
+  display: flex;
+  gap: 0.5vw;
+}
+.filter .domain svg {
+  width: 1.5vw;
+}
+.filter .domain p {
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+main .filter .buttons {
+  display: flex;
+  gap: 0.5vw;
+}
+main .filter .buttons button {
+  padding: 1vh 1vw;
+  border-radius: 15px;
+  font-weight: 800;
+  font-size: 0.75rem;
+}
+.blue {
+  background-color: #540599;
+  color: white;
+}
+.backgrey {
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 12px;
+}
+main .program {
+  padding: 1vh 5vw 20vh 7vw;
+}
+main .program .row {
+  display: flex;
+  gap: 1vw;
+}
+main .program .row .child {
+  width: 30vw;
+  border: 1px solid rgb(214, 212, 212);
+  border-radius: 12px;
+  padding: 3vh 1.5vw;
+}
+main .program .row .child .desc {
+  display: flex;
+  justify-content: space-between;
+}
+main .program .row .child .desc .flex-child {
+  display: flex;
+  gap: 0.6vw;
+}
+main .program .row .child .desc .flex-child svg {
+  width: 1.2vw;
+}
+main .program .row .child .desc .flex-child .cols {
+  gap: 0.8vh;
+  padding-right: 3vw;
+}
+main .program .row .child .desc .flex-child .cols p,
+pre {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+main .program .row .child .desc .flex-child .cols .soln {
+  font-weight: 800;
+}
+main .program .row .child .desc button {
+  border-radius: 12px;
+  border: 0;
+  outline: 0;
+  font-size: 0.6rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  padding: 0.8vh 0.8vw;
+}
+main .program .row .child .desc h3 {
+  font-weight: 900;
+}
+.bottom {
+  border-bottom: 1px solid rgb(214, 212, 212);
+  padding-bottom: 3vh;
+}
+.active {
+  color: #8206ef;
+  background-color: #cf97ff;
+}
+.timetaken {
+  font-size: 0.8rem;
+}
+.buttonGame {
+  gap: 1vh;
+}
+main .program .row .child .desc .flex-child .buttonGame .size {
+  padding: 1.5vh 3vw;
+  font-size: 0.75rem;
+}
+.greenry {
+  background-color: rgba(175, 251, 175, 0.5);
+  color: green;
+}
+
+footer {
+  border-top: 1px solid rgb(200, 198, 198);
+}
+footer .content {
+  padding: 5vh 8vw;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .child {
+  width: 19%;
+}
+footer .content .child img {
+  height: 5vh;
+}
+footer .content .child p {
+  font-size: 0.85rem;
+}
+footer .content .child .media {
+  width: 13vw;
+  height: 6vh;
+}
+footer .content .child strong {
+  padding-left: 2.5vw;
+}
+footer .content .child ul {
+  list-style: none;
+  gap: 0.8rem;
+}
+footer .content .child ul li a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: grey;
+}
+.info {
+  border-top: 1px solid rgb(200, 198, 198);
+  padding: 5vh 8vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+.info .contact {
+  display: flex;
+  gap: 3vw;
+}
+.email {
+  display: flex;
+  gap: 0.5vw;
+}
+.email img {
+  height: 2vh;
+}
+footer .address {
+  padding: 1vh 8vw;
+  font-size: 0.8rem;
+  gap: 0.6rem;
+}
+@media (max-width: 768px) {
+  nav {
+    padding-left: 2vw;
+  }
+  .links {
+    display: none;
+  }
+  .logo-CSS {
+    padding: 0vh 0vw;
+  }
+  .logo-CSS img {
+    padding: 0vh 0vw;
+    height: 3.2vh;
+  }
+  .nav-links {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 3vh 5vw 1vh 5vh; 
-    font-size: 2vh;
-    border-bottom: 2px solid whitesmoke;
+    align-items: center;
+  }
+  .dasb {
+    display: none;
+  }
+  .small-right-icons {
+    display: flex;
+    gap: 4vw;
+  }
+  .account {
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #540599;
+    color: white;
+    height: 3.2vh;
+    width: 3.2vh;
+    border-radius: 8px;
+  }
+  .account svg {
+    height: 1.6vh;
+  }
+  .hamburger {
+    display: flex;
+    border: none;
+    background: none;
+    height: 3.2vh;
+  }
+  .navbarLeft {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 5;
+    width: 40vw;
+    height: 100%;
+    padding: 0vh 2vw 0vh 2vw;
     background-color: white;
-    box-sizing: border-box; 
-}
-.nav-links{
-    display: flex;
-}
-.logo-CSS{
-    display: flex;
-    gap: 0.8vw;
-}
-.logo-CSS h3{
-    font-size: 25px;
-    color: rgb(64, 64, 221);
-}
-.logo-CSS img{
-    height: 4vh;
-}
-.links{
-    display: flex;
-    list-style: none;
-    gap: 2vw;
-    padding-top: 0.4vh;
-}
-.links li a{
-    text-decoration: none;
-    color: #000000;
-    word-spacing: 0.3vw;
-}
-.dashboard{
-    display: flex;
-    gap:0.8vw;
-}
-.path{
-    font-size: 1.5vh;
-    padding-bottom: 1vh;
-    color: grey;
-}
-.dashboard img{
-    height: 4.5vh;
-    border-radius: 8px;
-}
-nav a{
-    text-decoration: none;
-}
-main .hero-section{
-    padding: 15vh 5vw 2vh 7vw;
-}
-main .hero-section .admission{
-    display: flex;
-    gap: 0.5vw;
-    border-radius: 12px;
-    outline: 0;
-    width: 10vw;
-    padding: 1vh 1vw;
-    font-size: 0.7rem;
-    font-weight: 500;
-    border: 1px solid #8206ef ;
-    background-color: #cf97ff;
-}
-main .hero-section button svg{
-    width: 1vw;
-    color: #401668;
-}
-.hero-section h1{
-    font-size: 2.6rem;
-    font-weight: 900;
-    line-height: 7.5vh;
-}
-.hero-section p{
-    font-weight: 600;
-}
-.hero-section .row{
+  }
+  .navbarRight {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 40vw;
+    height: 100%;
+    width: 100vw;
+    backdrop-filter: blur(18px);
+    background-color: #21212124;
+  }
+  .navbarLeft .logo-CSS {
     display: flex;
     justify-content: space-between;
-}
-.hero-section .row .child{
+    padding: 4vh 4vw 2vh 2vw;
+  }
+  .navbarLeft .logo-CSS svg {
+    height: 3.2vh;
+  }
+  .navbarLeft .logo-CSS img {
+    height: 3.2vh;
+  }
+  .navbarLeft .grey {
+    padding-top: 4vh;
+    padding-left: 2.6vw;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(107, 106, 106);
+    border-top: 0.1px solid rgb(200, 199, 199);
+  }
+  .navbarLeft .links {
     display: flex;
-    gap: 1vw;
-    width: 41vw;
-    border: 1px solid rgb(214, 212, 212);
-    border-radius: 12px;
-    background-color: whitesmoke;
-    padding: 1.8vh 1vw;
-}
-.hero-section .row .child .star{
+    gap: 4vh;
+    flex-direction: column;
+    padding: 2vh 8vw 4vh 3.9vw;
+  }
+  .navbarLeft .links li a {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  .navbarLeft .links li a svg {
     width: 2vw;
-    background-color: #dadadb;;
-    border-radius: 8px;
-    padding: 0.5vw;
-    color:#8206ef;
-}
-.hero-section .row .child .calendar{
-    width: 2vw;
-    background-color: rgba(175, 251, 175, 0.5);;
-    border-radius: 8px;
-    padding: 0.5vw;
-    color:green;
-}
-.hero-section .row .child .content{
-    gap: 0.5vh;
-}
-.hero-section .row .child .content h4{
-    font-weight: 900;
-}
-.hero-section .row .child .content p{
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-.demo{
-    border: 1px solid rgb(214, 212, 212);
+    color: rgb(84, 83, 83);
+  }
+  .navbarLeft .realDash {
+    display: flex;
+    justify-content: center;
+    padding: 1vh 2vw;
+    width: 28vw;
     border-radius: 12px;
-    background-color: rgba(252, 182, 252, 0.381);
-    padding: 2.5vh 1.8vw;
-    gap: 1.5vh;
-}
-.demo .content{
-    display: flex;
-    gap: 0.5vw;
-}
-.demo .content svg{
-    width: 1.8vw;
-    color: #8206ef;
-}
-.demo p{
-    font-size: 0.9rem;
-}
-.demo button{
-    background-color: #25d366;
-    display: flex;
-    gap: 1vw;
-    border-radius: 12px;
-    border: 0;
-    margin-top: 1rem;
-    outline: 0;
-    width: 15vw;
-    padding: 1vh 1vw 1vh 1vw;
-    font-size: 0.78rem;
-    font-weight: 800;
-    color: #ffffff;
-}
-.demo button svg{
-    width: 2.8vw;
-    color: #ffffff;
-}
-.cohorts .parent{
-    display: flex;
-    gap: 2vw;
-    width: 25vw;
-    border: 1px solid rgb(214, 212, 212);
-    border-radius: 12px;
-    background-color: whitesmoke;
-    padding: 1.8vh 1vw 1.8vh 0.5vw;
-}
-.cohorts .parent .child{
-    padding: 1.5vh 1vw;
-    border-radius: 12px;
-    font-weight: 900;
-    font-size: 0.9rem;
-}
-.cohorts .parent .whiteB{
-    background-color: #ffffff;
-}
-.filter .domain{
-    display: flex;
-    gap: 0.5vw;
-}
-.filter .domain svg{
-    width: 1.5vw;
-}
-.filter .domain p{
-    font-size: 0.8rem;
-    font-weight: 900;
-}
-main .filter .buttons{
-    display: flex;
-    gap: 0.5vw;
-}
-main .filter .buttons button{
-    padding: 1vh 1vw;
-    border-radius: 15px;
-    font-weight: 800;
-    font-size: 0.75rem;
-}
-.blue{
-    background-color: #540599;
+    font-weight: 600;
+    font-size: 1rem;
     color: white;
-}
-.backgrey{
-    color: black;
-    background-color: whitesmoke;
-    border: 1px solid rgb(214, 212, 212);
-    border-radius: 12px;
-}
-main .program{
-    padding: 1vh 5vw 20vh 7vw;
-}
-main .program .row{
+    background-color: #540599;
+  }
+  .navbarLeft .purpley {
     display: flex;
-    gap: 1vw;
-}
-main .program .row .child{
-    width: 30vw;
-    border: 1px solid rgb(214, 212, 212);
-    border-radius: 12px;
-    padding: 3vh 1.5vw;
-}
-main .program .row .child .desc{
+    position: fixed;
+    bottom: 4vh;
+    padding-left: 2.2vw;
+    padding-right: 8vw;
+  }
+  .navbarLeft.active {
     display: flex;
-    justify-content: space-between;
-}
-main .program .row .child .desc .flex-child{
+  }
+  .navbarRight.active {
     display: flex;
-    gap: 0.6vw;
-}
-main .program .row .child .desc .flex-child svg{
-    width: 1.2vw;
-}
-main .program .row .child .desc .flex-child .cols{
-    gap: 0.8vh;
-    padding-right: 3vw;
-}
-main .program .row .child .desc .flex-child .cols p,pre{
-    font-size: 0.8rem;
-    font-weight: 600;
-}
-main .program .row .child .desc .flex-child .cols .soln{
-    font-weight: 800;
-}
-main .program .row .child .desc button{
-    border-radius: 12px;
-    border: 0;
-    outline: 0;
-    font-size: 0.6rem;
-    font-weight: 900;
-    letter-spacing: 0.1rem;
-    padding: 0.8vh 0.8vw;
-}
-main .program .row .child .desc h3{
-    font-weight: 900;
-}
-.bottom{
-    border-bottom: 1px solid rgb(214, 212, 212);
-    padding-bottom: 3vh;
-}
-.active{
-    color: #8206ef ;
-    background-color: #cf97ff;
-}
-.timetaken{
-    font-size: 0.8rem;
-}
-.buttonGame{
-    gap: 1vh;
-}
-main .program .row .child .desc .flex-child .buttonGame .size{
-    padding: 1.5vh 3vw;
-    font-size: 0.75rem;
-}
-.greenry{
-    background-color: rgba(175, 251, 175, 0.5);;
-    color:green;
-}
-
-footer{
-    border-top: 1px solid rgb(200, 198, 198);
-}
-footer .content{
-    padding: 5vh 8vw;
-    width: 80%;
+  }
+  .foot {
+    display: none;
+  }
+  .footy {
+    padding: 2vh 0vw 10vh 0vw;
     display: flex;
-    justify-content: space-between;
-}
-footer .content .child{
-    width: 19%;
-}
-footer .content .child img{
-    height: 5vh;
-}
-footer .content .child p{
-    font-size: 0.85rem;
-}
-footer .content .child .media{
-    width: 13vw;
-    height: 6vh;
-}
-footer .content .child strong{
-    padding-left: 2.5vw;
-}
-footer .content .child ul{
-    list-style: none;
-    gap: 0.8rem;
-}
-footer .content .child ul li a{
+    align-items: center;
+    gap: 2.4vh;
+  }
+  .footy .linktam {
+    display: flex;
+    gap: 2vw;
+  }
+  .footy .linktam a {
     text-decoration: none;
-    font-size: 0.85rem;
+    color: rgb(97, 96, 96);
+    font-size: 0.92rem;
+  }
+  .footy .text p {
+    font-size: 0.9rem;
+  }
+  .stickfoot {
+    display: flex;
+    gap: 16.6vw;
+    position: fixed;
+    border-top: 0.5px solid rgba(193, 191, 191, 0.658);
+    height: 6vh;
+    padding: 1vh 2vw 1vh 2.5vw;
+    bottom: 0vh;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  .stickfoot .click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vh;
+    text-decoration: none;
     color: grey;
-}
-.info{
-    border-top: 1px solid rgb(200, 198, 198);
-    padding: 5vh 8vw;
-    display: flex;
-    justify-content: space-between;
+  }
+  .stickfoot .click svg {
+    width: 4.5vw;
+  }
+  .stickfoot .click:nth-child(3) svg {
+    color: #540599;
+  }
+  .stickfoot .click:nth-child(3) p {
+    color: #540599;
+  }
+  .stickfoot .click p {
+    font-size: 0.84rem;
+  }
+  main .hero-section {
+    padding: 10vh 6vw;
+  }
+  main .hero-section .admission {
+    width: 22vw;
+    padding: 1vh 1vw;
+    align-items: center;
+    justify-content: center;
+  }
+  main .hero-section .admission svg {
+    width: 3vw;
+  }
+  main .hero-section .admission b {
+    font-size: 0.85rem;
+  }
+  main .hero-section h1 {
+    line-height: 5vh;
+  }
+  main .hero-section p {
+    font-weight: 600;
+  }
+  main .hero-section .row .child {
+    gap: 2vw;
+    padding-left: 2vw;
+    width: 40vw;
+  }
+  main .hero-section .row .child .star {
+    width: 4vw;
+  }
+  main .hero-section .row .child .calendar {
+    width: 4vw;
+  }
+  main .hero-section .demo .content {
+    align-items: center;
+    gap: 1.4vw;
+  }
+  main .hero-section .demo .content svg {
+    width: 4vw;
+  }
+  main .hero-section .demo .grey {
+    line-height: 2.4vh;
+    letter-spacing: 0.01vw;
+    font-weight: 550;
+    word-spacing: 0.2vw;
+  }
+  main .hero-section .demo button {
+    width: 28vw;
     font-size: 0.8rem;
-}
-.info .contact{
-    display: flex;
-    gap: 3vw;
-}
-.email{
-    display: flex;
-    gap: 0.5vw;
-}
-.email img{
+    align-items: center;
+    padding: 1.2vh 1vw;
+    letter-spacing: 0.01vw;
+  }
+  main .hero-section .demo button svg {
+    width: 4vw;
     height: 2vh;
-}
-footer .address{
-    padding: 1vh 8vw;
+  }
+  main .hero-section .cohorts .parent {
+    width: 40vw;
+    padding: 1.2vh 1.8vw;
+  }
+  main .hero-section .cohorts .parent .whiteB {
+    padding: 1.4vh 1.4vw;
+  }
+  main .hero-section .filter .domain {
+    align-items: center;
+  }
+  main .hero-section .filter .domain svg {
+    width: 3vw;
+  }
+  main .hero-section .filter .buttons button {
+    padding: 1vh 1.8vw;
     font-size: 0.8rem;
-    gap: 0.6rem;
+    border-radius: 18px;
+  }
+  main .program .row {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+  }
+  main .program .row .child {
+    width: 85vw;
+    padding: 1.8vh 2vw 1.8vh 2.5vw;
+  }
+  main .program .row .child .desc .grey {
+    padding: 1vh 1.6vw;
+  }
+  main .program .row .child .desc .active {
+    padding: 1vh 1.6vw;
+  }
+  main .program .row .child .top .flex-child,
+  main .program .row .child .bottom .flex-child {
+    gap: 1.5vw;
+  }
+  main .program .row .child .top .flex-child .cols,
+  main .program .row .child .bottom .flex-child .cols {
+    gap: 0.1vh;
+  }
+  main .program .row .child .bottom .flex-child .cols .soln,
+  main .program .row .child .top .flex-child .cols .soln{
+    padding-left: 1.6vw;
+  }
+  main .program .row .child .top .flex-child svg {
+    width: 2.8vw;
+  }
+  main .program .row .child .bottom .flex-child svg {
+    width: 2.8vw;
+  }
 }
