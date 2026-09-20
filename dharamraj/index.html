@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharamraj Foundation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav-links a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="absolute -z-10 flex flex-row justify-between items-center px-2 py-2 border-b w-full">
+            <img src="./imgs/dharmaraj_logo.png" alt="DHARAMARAJ FOUNDATION LOGO" class="logo lg:h-[8vh] pl-8 h-[5vh]">
+            <div class="hidden active:block nav-links lg:flex flex-row gap-6">
+                <a href="#" class="underline-offset-4 hover:underline">Home</a>
+                <a href="#" class="underline-offset-4 hover:underline">About Us</a>
+                <a href="#" class="underline-offset-4 hover:underline">Our Causes</a>
+                <a href="#" class="underline-offset-4 hover:underline">Impact</a>
+                <a href="#" class="underline-offset-4 hover:underline">Get Involved</a>
+                <a href="#" class="underline-offset-4 hover:underline">Contact Us</a>
+            </div>
+            <div class="buttonGroup pr-5 hidden lg:flex">
+                <button
+                    class="font-[600] uppercase bg-blue-600 hover:bg-blue-800 px-4 py-2 rounded-full text-white text-sm text-[600] mr-2 tracking-wider hover:bottom-1 relative">Donate
+                    Now</button>
+                <button
+                    class="font-[600] hover:bg-orange-600 bg-orange-400 px-4 py-2 rounded-full text-white text-sm tracking-wider hover:bottom-1 relative">Volunteer</button>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-[4vw] flex lg:hidden mr-4 hamburger">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </nav>
+        <!-- MOBILE RESPONSIVE DESIGN BEGIN -->
+        <div class="flex flex-row absolute">
+            <div class="navbarLeft hidden [&.active]:flex flex-col bg-white z-20 w-[60vw] sm:w-[40vw] h-[100vh] lg:hidden">
+                <div class="flex flex-row items-center justify-between pr-3 border-b">
+                    <img src="./imgs/dharmaraj_logo.png" alt="DHARAMARAJ FOUNDATION LOGO"
+                        class="logo w-[32vw] h-[6vh] md:w-[20vw] pl-2 pt-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="crossHome size-6 h-[2vh] mt-2 md:h-[4vh]">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="flex flex-col px-4 pt-4 gap-4 text-[0.8rem] font-[600] text-gray-600">
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>Home</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>About Us</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>Our Causes</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>Impact</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>Get Involved</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="flex flex-row justify-between items-center">
+                        <p>Contact Us</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6 h-[1vh] text-gray-600">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="px-2 flex flex-col gap-4 absolute bottom-4 items-stretch justify-center w-[60vw] sm:w-[40vw]">
+                    <button
+                        class="font-[600] uppercase bg-blue-600 hover:bg-blue-800 px-1 py-2 rounded-lg text-white text-sm text-[600] tracking-wider">Donate
+                        Now</button>
+                    <button
+                        class="font-[600] hover:bg-orange-600 bg-orange-400 px-1 py-2 rounded-lg text-white text-sm tracking-wider">Volunteer</button>
+                </div>
+            </div>
+            <div class="navbarRight [&.active]:flex hidden w-[40vw] sm:w-[60vw] h-[100vh] bg-[#21212124] blur-sm z-20 lg:hidden">
+            </div>
+        </div>
+        <!-- MOBILE RESPONSIVE DESIGN FINISH -->
+    </header>
+    <script src="./script/home.js"></script>
+</body>
+
+</html>
