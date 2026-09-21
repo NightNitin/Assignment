@@ -10,12 +10,24 @@
         .nav-links a:hover {
             color: blue;
         }
+
+        .hero-section {
+            background-image: linear-gradient(rgba(38, 0, 255, 0.5), rgba(0, 38, 255, 0.5)), url(imgs/hero-img.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .navbarRight {
+            background-color: #21212112;
+            backdrop-filter: blur(18px);
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="absolute -z-10 flex flex-row justify-between items-center px-2 py-2 border-b w-full">
+        <nav class="fixed bg-white z-10 lg:z-20 flex flex-row justify-between items-center px-2 py-2 border-b w-full">
             <img src="./imgs/dharmaraj_logo.png" alt="DHARAMARAJ FOUNDATION LOGO" class="logo lg:h-[8vh] pl-8 h-[5vh]">
             <div class="hidden active:block nav-links lg:flex flex-row gap-6">
                 <a href="#" class="underline-offset-4 hover:underline">Home</a>
@@ -39,7 +51,8 @@
         </nav>
         <!-- MOBILE RESPONSIVE DESIGN BEGIN -->
         <div class="flex flex-row absolute">
-            <div class="navbarLeft hidden [&.active]:flex flex-col bg-white z-20 w-[60vw] sm:w-[40vw] h-[100vh] lg:hidden">
+            <div
+                class="navbarLeft fixed left-0 hidden z-10 [&.active]:flex flex-col bg-white w-[60vw] sm:w-[40vw] h-[101vh] lg:hidden">
                 <div class="flex flex-row items-center justify-between pr-3 border-b">
                     <img src="./imgs/dharmaraj_logo.png" alt="DHARAMARAJ FOUNDATION LOGO"
                         class="logo w-[32vw] h-[6vh] md:w-[20vw] pl-2 pt-3">
@@ -92,7 +105,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="px-2 flex flex-col gap-4 absolute bottom-4 items-stretch justify-center w-[60vw] sm:w-[40vw]">
+                <div class="px-2 flex flex-col gap-4 fixed bottom-4 items-stretch justify-center w-[60vw] sm:w-[40vw]">
                     <button
                         class="font-[600] uppercase bg-blue-600 hover:bg-blue-800 px-1 py-2 rounded-lg text-white text-sm text-[600] tracking-wider">Donate
                         Now</button>
@@ -100,11 +113,53 @@
                         class="font-[600] hover:bg-orange-600 bg-orange-400 px-1 py-2 rounded-lg text-white text-sm tracking-wider">Volunteer</button>
                 </div>
             </div>
-            <div class="navbarRight [&.active]:flex hidden w-[40vw] sm:w-[60vw] h-[100vh] bg-[#21212124] blur-sm z-20 lg:hidden">
+            <div
+                class="navbarRight fixed left-[60vw] sm:left-[40vw] [&.active]:flex hidden w-[40vw] sm:w-[60vw] h-[100vh] bg-[#21212124] blur-sm z-20 lg:hidden">
             </div>
         </div>
         <!-- MOBILE RESPONSIVE DESIGN FINISH -->
     </header>
+    <main class="">
+        <div
+            class="z-0 hero-section pr-4 flex flex-col gap-2 pl-[8vw] pt-[16vh] relative w-full top-[6vh] lg:top-[10vh] h-[90vh]">
+            <div class="flex flex-col gap-8 bg-[rgba(38, 0, 255, 0.9)]">
+                <h1
+                    class="text-white text-center md:text-left text-[2rem] md:text-6xl w-[80vw] lg:w-[40vw] uppercase font-bold relative top-8">
+                    Empowering Lives, <span class="text-orange-600">Building Dreams</span></h1>
+                <p
+                    class="text-white text-[1.2rem] md:text-2xl text-center md:text-left w-[full] md:w-[60vw] lg:w-[40vw] relative top-8">
+                    <span class="text-orange-400 font-bold">Dharmaraj Foundation:</span> Uplifting underprivileged
+                    communities through sustainable education, health, digital literacy, and holistic welfare.
+                </p>
+            </div>
+            <div class="pt-[8vh] flex flex-col md:flex-row gap-4">
+                <button
+                    class="text-white bg-orange-400 hover:bg-orange-600 px-4 py-2 rounded-xl uppercase text-xl font-bold">Join
+                    Our Mission</button>
+                <button
+                    class="text-white px-4 py-2 rounded-xl uppercase relative hover:bottom-2 text-xl border-white border-2">Explore
+                    Our
+                    Causes</button>
+            </div>
+        </div>
+        <div class="z-0 relative mt-[18vh] w-full h-[95vh]">
+            <div class="flex flex-row gap-4 px-[8vw]">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-5xl leading-[3.8rem] font-[600] w-[23vw]">Together, We are Building a
+                        <span class="text-green-600">Better India</span>
+                    </h2>
+                    <div class="flex flex-row gap-2">
+                        <button
+                            class="text-white bg-blue-600 hover:bg-green-600 px-4 py-2 rounded-xl uppercase text-base font-bold">Join
+                            Now</button>
+                        <button
+                            class="text-white bg-red-500 hover:bg-blue-800 px-4 py-2 rounded-xl uppercase text-base font-bold">Send Urgent Help to Bihar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
     <script src="./script/home.js"></script>
 </body>
 
