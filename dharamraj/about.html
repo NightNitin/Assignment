@@ -4,35 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dharamraj Foundation</title>
+    <title>About Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .nav-links a:hover {
             color: blue;
         }
 
-        .hero-section {
-            background-image: linear-gradient(rgba(38, 0, 255, 0.5), rgba(0, 38, 255, 0.5)), url(imgs/hero-img.webp);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+        .poppins{
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
         }
-
         .navbarRight {
             background-color: #21212112;
             backdrop-filter: blur(18px);
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bitcount+Ink:wght@100..900&family=Black+Ops+One&family=Caveat:wght@400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Pliant:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav class="fixed bg-white z-10 lg:z-20 flex flex-row justify-between items-center px-2 py-2 border-b w-full">
-            <img src="./imgs/dharmaraj_logo.png" alt="Dharmaraj FOUNDATION LOGO" class="logo lg:h-[8vh] pl-8 h-[5vh]">
+            <img src="imgs/dharmaraj_logo.png" alt="Dharmaraj FOUNDATION LOGO" class="logo lg:h-[8vh] pl-8 h-[5vh]">
             <div class="hidden active:block nav-links lg:flex flex-row gap-6">
-                <a href="./index.html" class="underline-offset-4 hover:underline">Home</a>
-                <a href="./about.html" class="underline-offset-4 hover:underline">About Us</a>
-                <a href="#" class="underline-offset-4 hover:underline">Our Causes</a>
+                <a href="index.html" class="underline-offset-4 hover:underline">Home</a>
+                <a href="about.html" class="underline-offset-4 hover:underline">About Us</a>
+                <a href="index.html" class="underline-offset-4 hover:underline">Our Causes</a>
                 <a href="#" class="underline-offset-4 hover:underline">Impact</a>
                 <a href="#" class="underline-offset-4 hover:underline">Get Involved</a>
                 <a href="#" class="underline-offset-4 hover:underline">Contact Us</a>
@@ -120,105 +122,47 @@
         <!-- MOBILE RESPONSIVE DESIGN FINISH -->
     </header>
     <main class="">
-        <div
-            class="z-0 hero-section pr-4 flex flex-col gap-2 pl-[8vw] pt-[16vh] relative w-full top-[6vh] lg:top-[10vh] h-[90vh]">
-            <div class="flex flex-col gap-8 bg-[rgba(38, 0, 255, 0.9)]">
-                <h1
-                    class="text-white text-center md:text-left text-[2rem] md:text-6xl w-[80vw] lg:w-[40vw] uppercase font-bold relative top-8">
-                    Empowering Lives, <span class="text-orange-600">Building Dreams</span></h1>
-                <p
-                    class="text-white text-[1.2rem] md:text-2xl text-center md:text-left w-[full] md:w-[60vw] lg:w-[40vw] relative top-8">
-                    <span class="text-orange-400 font-bold">Dharmaraj Foundation:</span> Uplifting underprivileged
-                    communities through sustainable education, health, digital literacy, and holistic welfare.
-                </p>
-            </div>
-            <div class="pt-[8vh] flex flex-col md:flex-row gap-4">
-                <button
-                    class="text-white bg-orange-400 hover:bg-orange-600 px-4 py-2 rounded-xl uppercase text-lg md:text-xl font-bold">Join
-                    Our Mission</button>
-                <button
-                    class="text-white px-4 py-2 rounded-xl uppercase relative hover:bottom-2 text-lg md:text-xl border-white border-2">Explore
-                    Our
-                    Causes</button>
-            </div>
+        <div class="flex flex-col gap-4 items-center pt-[15vh] lg:pt-[25vh]">
+            <h1 class="text-4xl lg:text-6xl font-[600] text-center text-orange-400">About Us</h1>
+            <h4 class="text-lg lg:text-xl/8 poppins text-green-700 font-[600] text-center w-[80vw] lg:w-[60vw]">Dharmaraj Foundation collaborates with a diverse array
+                of Partners such as NGOs, Government and Corporate CSR Programs to drive impactful community development
+                initiatives across India. These partnerships focus on areas such as education, healthcare, women's
+                empowerment, and environmental sustainability.</h4>
+                <p class="text-sm lg:text-lg/8 font-light poppins text-center w-[55vw] lg:w-[45vw]">Dharmaraj Foundation partners include Barclays Bank, Zomato, Salesforce, Government of Delhi, National Geographic, Hindustan Petroleum, Indian Railways, IIFL, Abhaydan, Kajaria, Jaguar Land Rover, Apollo ...</p>
         </div>
-        <div class="z-0 relative mt-[10vh] lg:mt-[18vh] w-full h-[45vh]">
-            <div
-                class="flex flex-col gap-[8vh] lg:gap-4 items-center lg:items-baseline lg:flex-row justify-between px-[8vw]">
-                <div class="flex flex-col w-full gap-4 lg:gap-[8vh]">
-                    <h2 class="text-2xl text-center lg:text-left lg:text-5xl leading-[2rem] font-[600] lg:w-[23vw]">
-                        Together, We are Building a
-                        <span class="text-green-600">Better India</span>
-                    </h2>
-                    <div class="flex flex-col items-center lg:items-baseline lg:flex-row gap-2">
-                        <button
-                            class="text-white bg-blue-600 hover:bg-green-600 px-4 py-2 rounded-xl uppercase text-base font-bold w-[45vw] md:w-[32vw] lg:w-[15vw]">Join
-                            Now</button>
-                        <button
-                            class="text-white bg-red-500 hover:bg-blue-800 px-4 py-2 rounded-xl uppercase text-base font-bold">Send
-                            Urgent Help to Bihar</button>
-                    </div>
+        <div class="flex flex-col lg:flex-row gap-4 pt-8 pb-8 justify-center">
+            <div class="flex flex-col items-center gap-2">
+                <img src="./imgs/career.jpeg" alt="CAREER" class="w-[65vw] lg:w-[35vw] rounded-lg">
+                <p class="text-xl text-blue-600 font-bold">Career Guidance</p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+                <img src="./imgs/womencare.jpeg" alt="CARE" class="w-[65vw] lg:w-[35vw] rounded-lg">
+                <p class="text-xl text-blue-600 font-bold">Women Empowerment</p>
+            </div>
+            
+        </div>
+        <div class="flex mt-4 flex-col gap-4 items-center">
+            <p class="lg:text-3xl text-xl font-[500]">Community Engagement</p>
+            <p class="lg:text-xl text-gray-600 text-lg px-4 md:px-0 text-center">Empowering local communities through sustainable initiatives</p>
+            <div class="flex flex-col lg:flex-row gap-4">
+                <div class="flex flex-col items-center">
+                    <img src="./imgs/greenmovement.jpeg" alt="GREEN" class="rounded-xl w-[65vw] lg:w-[35vw] lg:h-[45vh]">
+                    <p class="text-xl font-[500] text-green-600">Green India Events</p>
                 </div>
-                <div class="flex flex-col gap-4">
-                    <p class="text-lg w-[70vw] lg:w-[42vw] text-center lg:text-left leading-[2rem]"><a href="#"
-                            class="text-blue-600">Dharmaraj Foundation<sup>TM</sup></a> is registered under the
-                        Societies Registration Act XXI 1860 and is working towards Environment and Human Well-Being
-                        through collaboration with Local Communities, CSR Companies and Government Departments working
-                        across India since 2015.</p>
-                    <div class="flex flex-col gap-4 items-center lg:items-baseline lg:flex-row lg:gap-[6vw]">
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-5xl font-bold text-blue-600">150k+</h2>
-                            <p class="font-base text-lg pl-2">Volunteers</p>
-                        </div>
-                        <div class="flex flex-col gap-2 pl-6 lg:pl-0">
-                            <h2 class="text-5xl font-bold text-blue-600">117+</h2>
-                            <p class="font-base text-lg pl-2">Govt. & CSR Partners</p>
-                        </div>
-                    </div>
+                <div class="flex flex-col items-center">
+                    <img src="./imgs/healthcare.jpeg" alt="HEALTHCARE" class="rounded-xl w-[65vw] lg:w-[35vw] lg:h-[45vh]">
+                    <p class="text-xl font-[500] text-green-600">Health Care Initiatives</p>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col gap-8 items-center bg-gray-200 mt-[35vh] md:mt-8 w-full h-auto">
-            <h1 class="text-5xl pt-5 text-blue-600 font-[500]">Our Works</h1>
-            <div class="flex flex-col lg:flex-row gap-2">
-                <div class="flex flex-col gap-6 items-center">
-                    <img src="./imgs/plant.jpeg" alt="LOCAL HELP"
-                        class="w-[84vw] h-[60vw] lg:w-[39vw] xl:h-[48vh] rounded-2xl">
-                    <div
-                        class="flex flex-col items-center bg-white relative bottom-[9vh] md:bottom-[9vh] lg:bottom-[12vh] w-[80vw] sm:w-[50vw] md:w-[78vw] lg:w-[36vw] px-1 py-2 gap-4">
-                        <h4 class="text-green-600 text-center text-lg underline">Environmental Factors</h4>
-                        <p class="w-[60vw] sm:w-[30vw] md:w-[78vw] lg:w-[35vw] text-lg text-center">Dharamraj Foundation
-                            promotes a cleaner, greener future through Swachh Bharat, Water Conservation, Environment
-                            Protection, Sanitation & Community Development, along with eco-friendly initiatives like
-                            GoGreen products and Solar Power Systems.</p>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center gap-6">
-                    <img src="./imgs/Local_help.jpeg" loading="lazy" alt="LOCAL HELP"
-                        class="w-[84vw] h-[60vw] lg:w-[39vw] xl:h-[48vh] rounded-2xl">
-                    <div
-                        class="flex flex-col items-center bg-white relative bottom-[9vh] md:bottom-[9vh] lg:bottom-[12vh] w-[80vw] sm:w-[50vw] md:w-[78vw] lg:w-[36vw] px-1 py-2 gap-4">
-                        <h4 class="text-green-600 text-center text-lg underline">Human Well-Being Efforts</h4>
-                        <p class="w-[60vw] sm:w-[30vw] md:w-[78vw] lg:w-[35vw] text-lg text-center">Dharmaraj Foundation
-                            works for human well-being through disaster relief, digital education & women empowerment,
-                            free legal support, and promoting arts, culture & animal welfare—uplifting lives, protecting
-                            rights, and nurturing compassion in society.</p>
-                    </div>
-                </div>
+        <div class="mt-4 mb-4 pt-6 flex flex-col gap-8 lg:flex-row  items-center lg:justify-center">
+            <div class="flex flex-col gap-1">
+                <h3 class="text-2xl font-[600]">Fundraising Efforts</h3>
+                <p class="text-gray-600 lg:flex hidden">Supporting our mission through generous donations and partnerships.</p>
             </div>
-        </div>
-        <div class="flex flex-col gap-6 items-center">
-            <h1 class="text-4xl lg:text-5xl pt-8 text-blue-600 font-[500]">Our Impact</h1>
-            <p class="text-lg/8 text-center w-[50vw] lg:w-full lg:text-xl text-gray-600">Advancing Environmental
-                Sustainability and Enhancing Human Well-Being</p>
-            <div class="mt-4 grid grid-cols-2 md:grid-cols-3 w-[80vw] gap-4">
-                <img src="./imgs/women_empowerement.jpeg" alt="WOMEN EMPOWEREMENT" class="w-[40vw] rounded-xl"
-                    loading="lazy">
-                <img src="./imgs/nellore.jpeg" alt="NELLORE" class="w-[40vw] rounded-xl" loading="lazy">
-                <img src="./imgs/donation.jpeg" alt="DONATION" class="w-[40vw] rounded-xl" loading="lazy">
-                <img src="./imgs/womencare.jpeg" alt="WOMENCARE" class="w-[40vw] rounded-xl" loading="lazy">
-                <img src="./imgs/career.jpeg" alt="WOMENCARE" class="w-[40vw] rounded-xl" loading="lazy">
-                <img src="./imgs/public.jpeg" alt="MIDDAY" class="w-[40vw] rounded-xl" loading="lazy">
+            <div class="flex flex-col lg:flex-row gap-5">
+                <button class="text-lg rounded-full border border-black px-[4vw] py-2 hover:bg-blue-600 hover:text-white">Give Online</button>
+                <button class="text-lg items-baseline rounded-full border border-black px-[4vw] py-2 hover:bg-blue-600 hover:text-white"> Learn More</button>
             </div>
         </div>
     </main>
